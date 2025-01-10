@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p7906-e91530.adobeaemcloud.com/bin/franklin.delivery/mikeippi123/sibe/main"
+    url: "https://$AEM_ENV.adobeaemcloud.com/bin/franklin.delivery/mikeippi123/sibe/main"
     type: "markup"
     suffix: ".html"
