@@ -3,3 +3,7 @@ mountpoints:
     url: "https://author-p7906-e91530.adobeaemcloud.com/bin/franklin.delivery/mikeippi123/sibe/main"
     type: "markup"
     suffix: ".html"
+  /qa:
+    url: "https://author-p7906-e91558.adobeaemcloud.com/bin/franklin.delivery/mikeippi123/sibe/main"
+    type: "markup"
+    suffix: ".html" 
