@@ -1,12 +1,21 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* footer {
+  font-size: var(--legal-font-size);
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  background-color: #2B2C2B;
 }
 
 footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+      padding-bottom: 20px;
+      position: relative;
+      overflow-x: hidden;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #565a5c;
+
 }
 
 footer .footer p {
@@ -17,4 +26,193 @@ footer .footer p {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+}
+
+.footer-wrapper .footer.block .section{
+  margin-left: 125px;
+  height: 250px;
+  margin-right: 300px;
+}
+
+
+.footer-wrapper .footer.block .section:first-child > div > p:first-child{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f8f8f8;
+}
+
+.footer-wrapper .footer.block .section > div > p:nth-child(2),
+.footer-wrapper .footer.block .section > div > p:nth-child(3),
+.footer-wrapper .footer.block .section > div > p:nth-child(4),
+.footer-wrapper .footer.block .section > div > p:nth-child(5),
+.footer-wrapper .footer.block .section > div > p:nth-child(6),
+.footer-wrapper .footer.block .section > div > p:nth-child(7),
+.footer-wrapper .footer.block .section > div > p:nth-child(8),
+.footer-wrapper .footer.block .section > div > p:nth-child(9),
+.footer-wrapper .footer.block .section > div > p:nth-child(10){
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  bottom: 50px;
+  font-weight: 400;
+  color: #f8f8f8;
+  border: black;
+  left: 250px;
+  position: relative;
+  text-align: left;
+}
+
+.footer-wrapper .footer.block .button{
+  border: none;
+  color: white;
+  text-align: left;
+  text-decoration: underline;
+}
+.footer-wrapper .footer.block .button:hover{
+  text-decoration: underline;
+}
+
+.footer-wrapper .footer.block .section:first-child > div > p:nth-child(11), p:nth-child(12){
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  bottom: 464px;
+  font-weight: 400;
+  color: #f8f8f8;
+  border: black;
+  left: 500px;
+  position: relative;
+}
+
+.footer-wrapper .footer.block .section:first-child > div > p:nth-child(13), p:nth-child(14), p:nth-child(15){
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  bottom: 564px;
+  font-weight: 400;
+  color: #f8f8f8;
+  border: black;
+  left: 850px;
+  position: relative;
+
+}
+
+.footer-wrapper .footer.block .section:first-child .button-container:nth-child(13) .button:nth-child(13){
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  width: 300px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(3){
+  border: white;
+  border-top: 2px solid
+
+}
+.footer-wrapper .footer.block .section:nth-child(3) > div > p:first-child .button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #f8f8f8;
+  position: relative;
+  top: 20px;
+  left: 300px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(2) .button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #f8f8f8;
+  position: relative;
+  top: 25px;
+  left: 410px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3) .button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #f8f8f8;
+  position: relative;
+  bottom: 20px;
+  left: 270px;
+}
+
+
+.footer-wrapper .footer.block .section:nth-child(4) > div > p:nth-child(2){
+  font-family: "Open Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #f8f8f8;
+  position: relative;
+  bottom: 25px;
+  left:250px;
+}*/
+.footer-wrapper .footer.block .section:nth-child(0) > div > p:nth-child(0){
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: rgb(33, 37, 41, 1);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
+  position: relative;
+  align-self: stretch;
+
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: rgb(33, 37, 41, 1);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(3) a:any-link{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica Neue-Bold", Helvetica;
+  font-weight: 700;
+  color: #198754;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.desktop-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px 48px;
+  position: relative;
+  background-color: #dee2e6;
+}
+/* text left section */
+.desktop-footer .section:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 72px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+/* text right section */
+.desktop-footer .section:nth-child(3) {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  font-family: "Roboto-Regular", Helvetica;
+  font-weight: 400;
+  color: rgb(33, 37, 41, 1);;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
 }
