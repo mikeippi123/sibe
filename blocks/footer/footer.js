@@ -18,7 +18,7 @@ export default async function decorate(block) {
 
   block.append(footer);
 
-  //test
+  // test
   footer.className = 'desktop-footer';
   // footer.className = 'layout-footer-left';
   // footer.className = 'layout-footer-right';
@@ -41,5 +41,4 @@ export default async function decorate(block) {
   // footer.className = 'text-3';
   // footer.className = 'text-wrapper-2';
   // footer.className = 'text-4';
-
 }
