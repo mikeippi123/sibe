@@ -2,7 +2,7 @@
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
   color: rgb(33, 37, 41, 1);
   font-size: 16px;
@@ -14,7 +14,7 @@
   position: relative;
   align-self: stretch;
 
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
   color: rgb(33, 37, 41, 1);
   font-size: 16px;
@@ -61,7 +61,7 @@
   gap: 16px;
   position: relative;
   flex: 0 0 auto;
-  font-family: "Roboto-Regular", Helvetica;
+  font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
   color: rgb(33, 37, 41, 1);;
   font-size: 16px;
