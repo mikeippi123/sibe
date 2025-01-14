@@ -13,7 +13,6 @@
 .footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
   position: relative;
   align-self: stretch;
-
   font-family: Roboto-Regular, Helvetica, sans-serif;
   font-weight: 400;
   color: rgb(33, 37, 41, 100%);
@@ -39,10 +38,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   /* padding: 24px 48px 48px; */
   position: relative;
   background-color: #dee2e6;
 }
+
   /* text left section */
 .desktop-footer .section:first-child {
   display: inline-flex;

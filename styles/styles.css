@@ -256,26 +256,30 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-/*Hero section */
+/* Hero section */
 .section.hero-container {
     height: 379.328px;
 }
+
 .default-content-wrapper:nth-child(2) {
   background-color: black;
   height: 0px;
 }
+
 .default-content-wrapper:nth-child(2) > p > picture {
   position: relative;
   bottom: 400px;
   height: 250px;
   width: 250px;
 }
+
 .default-content-wrapper:nth-child(2) > p > picture > img {
   position: relative;
   top: 5px;
   height: 380px;
   width: 483px;
 }
+
 /* Prefooter section */
 .section:nth-child(5) > div{
   width: 1289px;
@@ -305,7 +309,7 @@ main .section.highlight {
   letter-spacing: normal;
   text-wrap-mode: nowrap;
 }
-/*first button */
+/* first button */
 .section:nth-child(5) > div > p:nth-child(4) > .button {
   background-color: rgb(115, 150, 206);
   position: relative;
@@ -327,7 +331,7 @@ main .section.highlight {
   cursor: pointer;
 }
 
-/*second button */
+/* second button */
 .section:nth-child(5) > div > p:nth-child(5) > .button {
   background-color:  rgb(115, 150, 206);
   position: relative;
