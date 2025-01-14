@@ -4,7 +4,7 @@
   margin-top: -1.00px;
   font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
-  color: rgb(33, 37, 41, 1);
+  color: rgb(33, 37, 41, 100%);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -16,7 +16,7 @@
 
   font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
-  color: rgb(33, 37, 41, 1);
+  color: rgb(33, 37, 41, 100%);
   font-size: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -39,11 +39,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /*padding: 24px 48px 48px;*/
+  /* padding: 24px 48px 48px; */
   position: relative;
   background-color: #dee2e6;
 }
-/* text left section */
+  /* text left section */
 .desktop-footer .section:first-child {
   display: inline-flex;
   align-items: center;
@@ -63,7 +63,7 @@
   flex: 0 0 auto;
   font-family: Roboto-Regular, Helvetica;
   font-weight: 400;
-  color: rgb(33, 37, 41, 1);;
+  color: rgb(33, 37, 41, 100%);;
   font-size: 16px;
   letter-spacing: 0;
   line-height: 18px;
