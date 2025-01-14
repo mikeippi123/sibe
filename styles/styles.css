@@ -40,7 +40,7 @@
   --nav-height: 64px;
 
   /* figma styleguide lets use these if we can, will make it easier for copy paste */
-  --fpo: rgba(255, 0, 168, 1);
+  --fpo: rgb(255,0,168);
   --cta-image: rgba(0, 0, 0, 0.9);
   --white: rgba(255, 255, 255, 1);
   --black: rgba(0, 0, 0, 1);
