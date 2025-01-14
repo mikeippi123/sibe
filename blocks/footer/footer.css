@@ -38,8 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* padding: 24px 48px 48px; */
+  padding: 24px 48px 48px;
   position: relative;
   background-color: #dee2e6;
 }
