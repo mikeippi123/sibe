@@ -20,7 +20,6 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
@@ -166,17 +165,17 @@
   --body-regular-font-style: normal;
 
   /* Shadow Styles */
-  --shadow-primary: 0px 0px 0px 4px rgba(49, 132, 253, 50%);
-  --shadow-secondary: 0px 0px 0px 4px rgba(130, 138, 145, 50%);
-  --shadow-success: 0px 0px 0px 4px rgba(60, 153, 110, 50%);
-  --shadow-danger: 0px 0px 0px 4px rgba(225, 83, 97, 50%);
-  --shadow-warning: 0px 0px 0px 4px rgba(217, 164, 6, 50%);
-  --shadow-info: 0px 0px 0px 4px rgba(11, 172, 204, 50%);
-  --shadow-light: 0px 0px 0px 4px rgba(248, 249, 250, 50%);
-  --shadow-dark: 0px 0px 0px 4px rgba(66, 70, 73, 50%);
-  --shadow-small: 0px 2px 8px 0px rgba(0, 0, 0, 0.07);
-  --shadow-regular: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
-  --shadow-large: 0px 16px 48px 0px rgba(0, 0, 0, 0.17);
+  --shadow-primary: 0px 0px 0px 4px #3184FD80; /* rgba(49, 132, 253, 50%) */
+  --shadow-secondary: 0px 0px 0px 4px #828A9180; /* rgba(130, 138, 145, 50%) */
+  --shadow-success: 0px 0px 0px 4px #3C996E80; /* rgba(60, 153, 110, 50%) */
+  --shadow-danger: 0px 0px 0px 4px #E1536180; /* rgba(225, 83, 97, 50%) */
+  --shadow-warning: 0px 0px 0px 4px #D9A60680; /* rgba(217, 164, 6, 50%) */
+  --shadow-info: 0px 0px 0px 4px #0BACCC80; /* rgba(11, 172, 204, 50%) */
+  --shadow-light: 0px 0px 0px 4px #F8F9FA80; /* rgba(248, 249, 250, 50%) */
+  --shadow-dark: 0px 0px 0px 4px #42464980; /* rgba(66, 70, 73, 50%) */
+  --shadow-small: 0px 2px 8px 0px rgba(0, 0, 0, 7%); /* 0.07 to 7% */
+  --shadow-regular: 0px 8px 16px 0px rgba(0, 0, 0, 15%); /* 0.15 to 15% */
+  --shadow-large: 0px 16px 48px 0px rgba(0, 0, 0, 17%); /* 0.17 to 17% */
 }
 
 /* fallback fonts */
