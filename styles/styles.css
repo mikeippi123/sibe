@@ -47,6 +47,9 @@
   --dark-green: #273a25;
   --coral: #f0877f;
 
+  /* Footer Link Green */
+  -- greenLink: #198754;
+
   /* Light Green Shades */
   --light-greenlight-green-100: #f1f8f1;
   --light-greenlight-green-200: #e8f4e8;
@@ -83,6 +86,7 @@
   --body-textbody-color: #212529; /* rgba(33, 37, 41, 1) */
   --hitbox: #fff0; /* rgba(255, 255, 255, 0.0) */
   --gray-200: #e9ecef; /* rgba(233, 236, 239, 1) */
+  --footer-background-color: #dee2e6;
 
   /* Font Styles */
   --h1-font-family: "Inter", helvetica;
