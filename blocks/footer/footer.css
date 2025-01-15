@@ -2,7 +2,7 @@
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
-  font-family: --footnote-microcopy-font-family;
+  font-family: --footnote-microcopy-font-family, sans-serif;
   font-weight: --footnote-microcopy-it-font-weight;
   color: --black;
   font-size: --footnote-microcopy-it-font-size;
@@ -13,7 +13,7 @@
 .footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
   position: relative;
   align-self: stretch;
-  font-family: --footnote-microcopy-font-family;
+  font-family: --footnote-microcopy-font-family, sans-serif;
   font-weight: --footnote-microcopy-it-font-weight;
   color: --black;
   font-size: --footnote-microcopy-it-font-size;
@@ -25,9 +25,9 @@
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
-  font-family: --bold-body-font-family;
+  font-family: --bold-body-font-family, sans-serif;
   font-weight: --bold-body-font-weight;
-  color: --greenLink;
+  color: --greenlink;
   font-size: --bold-body-font-size;
   letter-spacing: 0;
   line-height: 24px;
@@ -71,7 +71,7 @@
   gap: 16px;
   position: relative;
   flex: 0 0 auto;
-  font-family: --footnote-microcopy-font-family;
+  font-family: --footnote-microcopy-font-family, sans-serif;
   font-weight: --footnote-microcopy-it-font-weight;
   color: --black;
   font-size: --footnote-microcopy-it-font-size;
