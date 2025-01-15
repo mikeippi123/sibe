@@ -1,4 +1,4 @@
-.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1){
+.footer-wrapper .footer.block .section:nth-child(0) > div > p:nth-child(0){
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
@@ -35,7 +35,7 @@
 }
 
 .desktop-footer {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px 48px 48px;
