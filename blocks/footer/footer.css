@@ -1,20 +1,80 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1){
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: Roboto-Regular, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(33 37 41 100%);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+.footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
+  position: relative;
+  align-self: stretch;
+  font-family: Roboto-Regular, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(33 37 41 100%);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
 }
 
-footer .footer p {
-  margin: 0;
+.footer-wrapper .footer.block .section:nth-child(3) a:any-link{
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Helvetica Neue-Bold", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #198754;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
+.desktop-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px 48px;
+  position: relative;
+  background-color: #dee2e6;
+}
+
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: flex-start;
+  padding: 0 0 48px;
+  position: relative;
+  background-color: #dee2e6;
+}
+
+  /* text left section */
+.desktop-footer .section:nth-child(1) {
+  display: inline-flex;
+  align-items: center;
+  gap: 72px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+/* text right section */
+.desktop-footer .section:nth-child(3) {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  font-family: Roboto-Regular, Helvetica, sans-serif;
+  font-weight: 400;
+  color: rgb(33 37 41 100%);;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
 }
