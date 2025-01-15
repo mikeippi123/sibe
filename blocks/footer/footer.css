@@ -43,6 +43,16 @@
   background-color: #dee2e6;
 }
 
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  align-items: flex-start;
+  padding: 0px 0px 48px;
+  position: relative;
+  background-color: #dee2e6;
+}
+
   /* text left section */
 .desktop-footer .section:nth-child(1) {
   display: inline-flex;
