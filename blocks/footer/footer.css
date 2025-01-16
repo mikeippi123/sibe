@@ -1,5 +1,5 @@
 .footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1) > picture:nth-child(1){
-  position: absolute;
+  position: relative;
   align-self: stretch;
   max-width: 100%;
   height: 66px;
