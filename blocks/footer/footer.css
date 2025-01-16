@@ -78,3 +78,15 @@
   letter-spacing: 0;
   line-height: 18px;
 }
+
+footer.footer:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 66px;
+    width: 100%;
+    background: url(./img/footer-line-4x.png) repeat-x;
+    background-size: 100% 66px;
+}
