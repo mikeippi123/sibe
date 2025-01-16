@@ -212,8 +212,6 @@ export default async function decorate(block) {
   const paragraph = document.createElement('p');
   prescribingBlock.append(paragraph);
 
-
-
   innerHeaderContainer.append(headerTopLeftRow);
   innerHeaderContainer.append(headerTopRightRow);
   topHeaderSection.append(innerHeaderContainer);
@@ -221,23 +219,15 @@ export default async function decorate(block) {
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
-  block.append(topHeaderSection)
+  block.append(topHeaderSection);
   block.append(navWrapper);
 
+  const menuItems = document.querySelectorAll('div.default-content-wrapper a');
+  const currentPath = window.location.pathname;
 
-
- 
-    const menuItems = document.querySelectorAll('div.default-content-wrapper a');
-    const currentPath = window.location.pathname;
-    console.log(menuItems);
-    console.log(currentPath);
-  
-    menuItems.forEach(item => {
-        if (item.getAttribute('href') === currentPath) {
-          item.parentElement.classList.add('active');
-        }
-    });
-
+  menuItems.forEach((item) => {
+    if (item.getAttribute('href') === currentPath) {
+      item.parentElement.classList.add('active');
+    }
+  });
 }
-
-

@@ -41,41 +41,23 @@ header .top-header-section .inner-header-container .header-top-right-row {
   height: 32px;
 }
 
-header .top-header-section .inner-header-container .header-top-right-row .content{
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-  padding: 0px 48px;
-  z-index: 0;
-  padding-top: 12px;
+
+header nav a:any-link {
+  color: currentcolor;
 }
 
 header .top-header-section .inner-header-container .header-top-right-row .content > p > a{
   font-size: 14px;
   color: white;
   position: fixed;
-  top: 0px;
+  top: 0;
   background: white;
   left: 0;
 }
-header .header-top .header-top-right .utility-navigation{
-  position: absolute;
-  right: 100px;
-   
-}
-header .top-header-section .inner-header-container .header-top-right-row > ul {
-  font-size: 11px;
-  color: white;
-  position: absolute;
-  align-items: inline;
-}
 
-@media (min-width: 1320px) {
+@media (min-width: 1320px){
   header .top-header-section .inner-header-container {
-      width:1300px;
+      width: 1300px;
       margin: 0 auto;
       display: flex;
   }
@@ -86,18 +68,86 @@ header .top-header-section .utility-navigation {
   width: 100%;
 }
 
+header nav .nav-tools ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 12px;
+  width: auto;
+  height: 88px;
+  margin-top: 32px;
+}
+
 @media (min-width: 768px) {
   header .top-header-section .utility-navigation {
-      margin-top:-1px;
+      margin-top: -1px;
   }
+}
+
+header .top-header-section .inner-header-container .header-top-right-row .content{
+  color: #FFF;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  padding:0 48px;
+  z-index: 0;
+  padding-top: 12px;
 }
 
 @media (min-width: 1200px) {
   header .top-header-section .utility-navigation {
-      margin-top:7px;
+      margin-top: 7px;
       max-width: 247px;
       padding-left: 19px;
   }
+
+  header .top-header-section .utility-navigation ul {
+    font-size:14px;
+    letter-spacing: normal;
+    width: 100%;
+    padding-top: 6px;
+  }
+
+  header .top-header-section .utility-navigation ul li {
+    width:33.3333%;
+  }
+  
+  header .top-header-section .utility-navigation ul li:first-child {
+    text-align:left;
+  }
+
+  header .top-header-section .utility-navigation ul li:nth-child(2) {
+    padding-left:30px;
+  }
+
+  header .top-header-section .utility-navigation ul li:last-child {
+    padding-left:7px;
+  }
+
+}
+
+header nav .nav-tools ul > li {
+  color: #212529;
+  text-align: center;
+  font-family: var(--body-regular-font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  width: auto;
+  height: 84px;
+  display: flex;
+  justify-content: flex-end; /* Aligns the container to the right */
+  align-items: center;
+}
+
+header nav .nav-tools ul > li > ul {
+  margin-top: 0;
+}
+
+header nav .nav-tools ul > li > ul > li {
+  font-weight: 400;
 }
 
 header .top-header-section .utility-navigation ul {
@@ -114,20 +164,6 @@ header .top-header-section .utility-navigation ul {
   margin-bottom: 0;
 }
 
-@media (min-width: 1200px) {
-  header .top-header-section .utility-navigation ul {
-      font-size:14px;
-      letter-spacing: normal;
-      width: 100%;
-      padding-top: 6px;
-  }
-}
-
-@media (min-width: 1200px) {
-  header .top-header-section .utility-navigation ul li {
-      width:33.33333%;
-  }
-}
 
 header .top-header-section .utility-navigation ul li:first-child {
   width: 50%;
@@ -135,22 +171,10 @@ header .top-header-section .utility-navigation ul li:first-child {
   padding-right: 16px;
 }
 
-@media (min-width: 1200px) {
-  header .top-header-section .utility-navigation ul li:first-child {
-      text-align:left;
-  }
-}
-
 header .top-header-section .utility-navigation ul li:nth-child(2) {
   width: 50%;
   padding-left: 20px;
   text-align: left;
-}
-
-@media (min-width: 1200px) {
-  header .top-header-section .utility-navigation ul li:nth-child(2) {
-      padding-left:30px;
-  }
 }
 
 @media (min-width: 1200px) and (max-width:1250px) {
@@ -163,10 +187,17 @@ header .top-header-section .utility-navigation ul li:last-child {
   cursor: pointer;
 }
 
-@media (min-width: 1200px) {
-  header .top-header-section .utility-navigation ul li:last-child {
-      padding-left:7px;
-  }
+header .top-header-section .inner-header-container .header-top-right-row > ul {
+  font-size: 11px;
+  color: white;
+  position: absolute;
+  align-items: inline;
+}
+
+header .header-top .header-top-right .utility-navigation{
+  position: absolute;
+  right: 100px;
+   
 }
 
 header .nav-wrapper {
@@ -192,12 +223,11 @@ a.button:any-link, button{
   border: 1px solid #f8f8f8;
   padding: 9px 22px;
   min-height: 38px;
-  margin-top: 7px;
   text-transform: uppercase;
   background-color: transparent;
   border-color: #4271bd;
   color: #4271bd;
-  margin: 0px;
+  margin:7px 0 0;
 }
 
 header nav {
@@ -211,7 +241,7 @@ header nav {
   margin: auto;
   max-width: 1248px;
   height: var(--nav-height);
-  padding: 0 0px;
+  padding: 00;
   font-family: var(--body-font-family);
 }
 
@@ -226,30 +256,33 @@ header nav[aria-expanded='true'] {
     justify-content: space-between;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 0px;
+    padding: 00;
   }
 
   header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
   }
+
   header nav .nav-tools ul li:hover {
     border-bottom: 5px solid var(--dark-green, #273A25);
-    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+    background: var(--hitbox);
   }
+
   header nav .nav-tools ul li a:hover {
     text-decoration: none; 
   }
+
   header div div nav div div ul li.active {
     border-bottom: 5px solid var(--dark-green, #273A25);
-    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+    background: var(--hitbox);
   }
 
   header nav .nav-tools {
     display: block;
     visibility: visible;
     white-space: nowrap;
-    padding: 0px 16px 0px 0px;
+    padding:0 16px 0 0;
   }
 
   header nav[aria-expanded='true'] .nav-tools {
@@ -286,7 +319,6 @@ header nav[aria-expanded='true'] {
     display: flex;
     gap: 24px;
     align-content: center;
-    justify-content: flex-end;
   }
 
   header .top-header-section .inner-header-container .header-top-left-row {
@@ -313,11 +345,13 @@ header nav[aria-expanded='true'] {
     background:#273A25;
     z-index:  -1;
     height: 32px;
-  } 
+  }
+
   header nav .nav-hamburger {
     display: none;
     visibility: hidden;
-  } 
+  }
+
 }
 
 header nav p {
@@ -325,9 +359,7 @@ header nav p {
   line-height: 1;
 }
 
-header nav a:any-link {
-  color: currentcolor;
-}
+
 
 /* hamburger */
 header nav .nav-hamburger {
@@ -352,7 +384,6 @@ header nav .nav-hamburger button {
   text-overflow: initial;
   white-space: initial;
   justify-items: center;
-
 }
 
 header nav .nav-hamburger-icon,
@@ -408,7 +439,6 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-
 /* brand */
 header .nav-brand {
   grid-area: brand;
@@ -429,7 +459,6 @@ header nav .nav-brand img {
   align-items: center;
   gap: 10px;
   align-self: stretch;
-  
 }
 
 /* sections */
@@ -447,58 +476,25 @@ header nav[aria-expanded='true'] .nav-tools {
   visibility: visible;
   align-self: start;
 }
+
 header nav .nav-tools .default-content-wrapper{
   width: auto;
-
 }
-header nav .nav-tools ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 12px;
-  width: auto;
-  height: 88px;
-  margin-top: 32px;
-}
-
-
-header nav .nav-tools ul > li {
-  color: #212529;
-  text-align: center;
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%; /* 24px */
-  width: auto;
-  height: 84px;
-  display: flex;
-  justify-content: flex-end; /* Aligns the container to the right */
-  align-items: center;
-
-}
-
-header nav .nav-tools ul > li > ul {
-  margin-top: 0;
-}
-
-header nav .nav-tools ul > li > ul > li {
-  font-weight: 400;
-}
-
-
 
 /* tools */
 @media (width <= 820px) {
   header .nav-wrapper{
-    padding-top: 16x;
+    padding-top: 16px;
   }
+
   header .top-header-section .inner-header-container{
     width: 100%;
   }
-  header .top-header-section .inner-header-container .header-top-left-row {
-    height: 0px;
 
+  header .top-header-section .inner-header-container .header-top-left-row {
+    height: 0;
   }
+
   header .top-header-section .inner-header-container .header-top-right-row {
     display: flex;
     position: relative;
@@ -511,7 +507,8 @@ header nav .nav-tools ul > li > ul > li {
     text-align: center;
     word-wrap: break-word; /* or use overflow-wrap: break-word; */
   }
-    /* brand */
+
+  /* brand */
   header .nav-brand {
     grid-area: brand;
     flex-basis: 128px;
@@ -521,59 +518,61 @@ header nav .nav-tools ul > li > ul > li {
     width: 108px;
     height: 43.9px;
   }
+
   header nav .nav-brand img {
     display: flex;
     width: 72.1px;
     height: 44px;
     position: relative;
-    padding: 25px 0px 0px 8px;
+    padding: 25px 0 0 8px;
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    
   }
+
   header .nav-hamburger{
     border-radius: 4px;
-    border: 1px solid var(--components-navs-tabs-light-toggle-border, rgba(0, 0, 0, 0.10));
-    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+    border: 1px solid #0000001A;
+    background: var(--hitbox);
   }
+
   header nav .nav-tools ul {
     list-style: none;
-    padding-left: 0;
-    width: auto;
     height: 10px;
     display: flex;
     width: 375px;
-    padding: 0px 16px 8px 32px;
+    padding: 0 16px 8px 32px;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 0px;
+    margin-top: 0;
   }
+
   header nav .nav-tools ul > li {
     color: var(--dark-green-dark-green-300, #939D92);
-    font-family: "Helvetica Neue";
+    font-family: var(--body-regular-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
     display: flex;
-    align-items: start;
     justify-content: start;
     text-align: start;
     height: 24px;
-    padding: 8px 0px;
+    padding: 8px 0;
     align-items: center;
     gap: 4px;
     align-self: stretch;
   }
+
   header div div nav div div ul li.active {
     color: var(--dark-green, #273A25);
-    font-family: "Helvetica Neue";
+    font-family: var(--body-regular-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
   }
+
   header nav .nav-tools {
     position: relative;
     margin-left: auto;
@@ -581,20 +580,20 @@ header nav .nav-tools ul > li > ul > li {
     height: 128px;
     background: white;
     align-items: end;
-
   }
+
   header nav .nav-tools ul li:hover {
     color: var(--dark-green, #273A25);
-    font-family: "Helvetica Neue";
+    font-family: var(--body-regular-font-family);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 24px */
   }
+
   header nav .nav-tools ul li a:hover {
     text-decoration: none; 
   }
-
 }
 
 @media (width <= 562px) {
@@ -610,16 +609,18 @@ header nav .nav-tools ul > li > ul > li {
     text-align: center;
     word-wrap: break-word; /* or use overflow-wrap: break-word; */
   }
+
   header nav .nav-brand img {
     display: flex;
     width: 72.1px;
     height: 44px;
     position: relative;
-    padding: 25px 0px 0px 8px;
+    padding: 25px 0 0 8px;
     align-items: center;
     gap: 10px;
     align-self: stretch;
   }
+
   header nav .nav-tools {
     position: relative;
     margin-left: auto;
@@ -628,14 +629,18 @@ header nav .nav-tools ul > li > ul > li {
     background: white;
     align-items: end;
   }
+
   header .nav-wrapper{
-    padding: 16px 0px 0px 0px;
+    padding: 16px 0 0;
   }
+
 }
+
 @media (width <= 322px) {
   header .top-header-section{
-    height: 0px;
+    height: 0;
   }
+
   header .top-header-section .inner-header-container .header-top-right-row {
     margin-bottom: auto;
     align-items: center;
@@ -645,11 +650,10 @@ header nav .nav-tools ul > li > ul > li {
     background:#273A25;
     height: 76px;
     justify-content: center;
-    align-items: center;
     text-align: center;
     word-wrap: break-word; /* or use overflow-wrap: break-word; */
-
   }
+
   header nav .nav-tools {
     position: relative;
     margin-left: auto;
@@ -658,4 +662,5 @@ header nav .nav-tools ul > li > ul > li {
     background: white;
     align-items: end;
   }
+
 }
