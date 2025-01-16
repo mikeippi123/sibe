@@ -1,4 +1,4 @@
-.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1) > picture:nth-child(1){
+.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1) > picture{
   position: relative;
   align-self: stretch;
   max-width: 100%;
