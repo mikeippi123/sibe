@@ -1,21 +1,9 @@
 .footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1){
-  position: relative;
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: --footnote-microcopy-font-family, sans-serif;
-  font-weight: --footnote-microcopy-it-font-weight;
-  color: --black;
-  font-size: --footnote-microcopy-it-font-size;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1){
-   position: absolute;
-    align-self: stretch;
-    max-width: 100%;
-    height: 66px;
-    background-size: 100% 66px;
+  position: absolute;
+      align-self: stretch;
+      max-width: 100%;
+      height: 66px;
+      background-size: 100% 66px;
 }
 
 .footer-wrapper .footer.block .section:nth-child(2) > div > p:nth-child(2){
