@@ -48,7 +48,7 @@
   justify-content: space-between;
   padding: 24px 48px 48px;
   position: relative;
-  background-color: --light-color;
+  background-color: --footer-background-color;
 }
 
 .mobile-footer {
@@ -58,7 +58,7 @@
   align-items: flex-start;
   padding: 0 0 48px;
   position: relative;
-  background-color: --light-color;
+  background-color: --footer-background-color;
 }
 
   /* text left section */
