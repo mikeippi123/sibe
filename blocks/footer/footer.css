@@ -63,7 +63,7 @@
 }
 
   /* text left section */
-.desktop-footer .section:nth-child(3) {
+.desktop-footer .section:nth-child(2) {
   display: inline-flex;
   align-items: center;
   gap: 72px;
@@ -72,7 +72,7 @@
 }
 
 /* text right section */
-.desktop-footer .section:nth-child(2) {
+.desktop-footer .section:nth-child(3) {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
