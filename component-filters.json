@@ -15,13 +15,24 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "teaser",
+      "prefooter",
+      "carousel"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "card",
+    "components": [
+      "text",
+      "image",
+      "button"
     ]
   },
   {
@@ -37,6 +48,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "slide"
     ]
   }
 ]
