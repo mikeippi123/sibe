@@ -2,7 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = window.matchMedia('(min-width: 820px)');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
@@ -224,3 +224,22 @@ navWrapper.append(nav);
 block.append(topHeaderSection)
 block.append(navWrapper);
 }
+
+const currentPath = window.location.pathname;
+console.log('Current Path:', currentPath); 
+
+
+const navLinks = document.querySelectorAll('div.header.block');
+console.log('Navigation Links:', navLinks); 
+
+navLinks.forEach(link => {
+
+    const linkPath = new URL(link.getAttribute('href'), window.location.origin).pathname;
+    console.log('Link Path:', linkPath); 
+
+
+    if (linkPath === currentPath) {
+        console.log('Match Found:', link);
+        link.classList.add('active');
+    }
+});
