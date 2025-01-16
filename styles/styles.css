@@ -47,6 +47,9 @@
   --dark-green: #273a25;
   --coral: #f0877f;
 
+  /* Footer Link Green */
+  --green-link: #198754;
+
   /* Light Green Shades */
   --light-greenlight-green-100: #f1f8f1;
   --light-greenlight-green-200: #e8f4e8;
@@ -83,81 +86,82 @@
   --body-textbody-color: #212529; /* rgba(33, 37, 41, 1) */
   --hitbox: #fff0; /* rgba(255, 255, 255, 0.0) */
   --gray-200: #e9ecef; /* rgba(233, 236, 239, 1) */
+  --footer-background-color: #dee2e6;
 
   /* Font Styles */
-  --h1-font-family: "Inter", helvetica;
+  --h1-font-family: "Inter", helvetica, sans-serif;
   --h1-font-weight: 700;
   --h1-font-size: 40px;
   --h1-letter-spacing: 0px;
   --h1-line-height: 110%;
   --h1-font-style: normal;
-  --h2-font-family: "Inter", helvetica;
+  --h2-font-family: "Inter", helvetica, sans-serif;
   --h2-font-weight: 400;
   --h2-font-size: 32px;
   --h2-letter-spacing: 0px;
   --h2-line-height: 120%;
   --h2-font-style: normal;
-  --h3-font-family: "Inter", helvetica;
-  --h3-font-weight: 700;
+  --h3-font-family: "Inter", helvetica, sans-serif;
+  --h3-font-weight: 400;
   --h3-font-size: 28px;
   --h3-letter-spacing: 0px;
   --h3-line-height: normal;
   --h3-font-style: normal;
-  --h4-font-family: "Inter", helvetica;
+  --h4-font-family: "Inter", helvetica, sans-serif;
   --h4-font-weight: 400;
   --h4-font-size: 24px;
   --h4-letter-spacing: 0px;
   --h4-line-height: 120%;
   --h4-font-style: normal;
-  --h5-font-family: "Inter", helvetica;
+  --h5-font-family: "Inter", helvetica, sans-serif;
   --h5-font-weight: 400;
   --h5-font-size: 20px;
   --h5-letter-spacing: 0px;
   --h5-line-height: 120%;
   --h5-font-style: normal;
-  --h6-font-family: "Inter", helvetica;
+  --h6-font-family: "Inter", helvetica, sans-serif;
   --h6-font-weight: 400;
   --h6-font-size: 16px;
   --h6-letter-spacing: 0px;
   --h6-line-height: 120%;
   --h6-font-style: normal;
-  --body-font-family: "Roboto", helvetica;
+  --body-font-family: "Roboto", helvetica, sans-serif;
   --body-font-weight: 400;
   --body-font-size: 16px;
   --body-letter-spacing: 0px;
   --body-line-height: 150%;
   --body-font-style: normal;
-  --footnote-microcopy-font-family: "Roboto", helvetica;
+  --footnote-microcopy-font-family: "Roboto", helvetica, sans-serif;
   --footnote-microcopy-font-weight: 400;
   --footnote-microcopy-font-size: 10.4px;
   --footnote-microcopy-letter-spacing: 0px;
   --footnote-microcopy-line-height: 130%;
   --footnote-microcopy-font-style: normal;
-  --bold-body-font-family: "Roboto", helvetica;
+  --bold-body-font-family: "Roboto", helvetica, sans-serif;
   --bold-body-font-weight: 700;
   --bold-body-font-size: 16px;
   --bold-body-letter-spacing: 0px;
   --bold-body-line-height: 150%;
   --bold-body-font-style: normal;
-  --footnote-microcopy-it-font-family: "Roboto", helvetica;
+  --footnote-microcopy-it-font-family: "Roboto", helvetica, sans-serif;
   --footnote-microcopy-it-font-weight: 400;
   --footnote-microcopy-it-font-size: 10.4px;
   --footnote-microcopy-it-letter-spacing: 0px;
   --footnote-microcopy-it-line-height: normal;
   --footnote-microcopy-it-font-style: italic;
-  --display-h4-font-family: "helvetica Neue", helvetica;
+  --display-h4-font-family: "helvetica Neue", helvetica, sans-serif;
   --display-h4-font-weight: 300;
   --display-h4-font-size: 56px;
   --display-h4-letter-spacing: 0px;
   --display-h4-line-height: 120%;
   --display-h4-font-style: normal;
-  --heading-h5-font-family: "helvetica Neue", helvetica;
+  --heading-h5-font-family: "helvetica Neue", helvetica, sans-serif;
   --heading-h5-font-weight: 500;
   --heading-h5-font-size: 20px;
   --heading-h5-letter-spacing: 0px;
   --heading-h5-line-height: 120%;
   --heading-h5-font-style: normal;
-  --body-regular-font-family: "helvetica Neue", helvetica;
+  --body-regular-font-family: "helvetica Neue", helvetica, sans-serif;
   --body-regular-font-weight: 400;
   --body-regular-font-size: 16px;
   --body-regular-letter-spacing: 0px;
@@ -254,12 +258,52 @@ h6 {
   font-style: var(--h1-font-style);
 }
 
-h1 { font-size: var(--h1-font-weight); }
-h2 { font-size: var(--h2-font-weight); }
-h3 { font-size: var(--h3-font-weight); }
-h4 { font-size: var(--h4-font-weight); }
-h5 { font-size: var(--h5-font-weight); }
-h6 { font-size: var(--h6-font-weight); }
+h1 { font-size: var(--h1-font-size); }
+
+h2 { 
+  font-family: var(--h2-font-family);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  letter-spacing: var(--h2-letter-spacing);
+  line-height: var(--h2-line-height);
+  font-style: var(--h2-font-style);
+}
+
+h3 { 
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  font-style: var(--h3-font-style);
+}
+
+h4 { 
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  font-size: var(--h4-font-size);
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: var(--h4-line-height);
+  font-style: var(--h4-font-style);
+}
+
+h5 { 
+  font-family: var(--h5-font-family);
+  font-weight: var(--h5-font-weight);
+  font-size: var(--h5-font-size);
+  letter-spacing: var(--h5-letter-spacing);
+  line-height: var(--h5-line-height);
+  font-style: var(--h5-font-style);
+}
+
+h6 { 
+  font-family: var(--h6-font-family);
+  font-weight: var(--h6-font-weight);
+  font-size: var(--h6-font-size);
+  letter-spacing: var(--h6-letter-spacing);
+  line-height: var(--h6-line-height);
+  font-style: var(--h6-font-style);
+}
 
 p,
 dl,
