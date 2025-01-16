@@ -37,7 +37,6 @@
 
   /* nav height */
   --nav-height: 120px;
-  --nav-height: 64px;
 
   /* Figma styleguide colors */
   --fpo: #ff00a8;
@@ -404,10 +403,7 @@ main .section.highlight {
     height: 379.328px;
 }
 
-.default-content-wrapper:nth-child(2) {
-  background-color: black;
-  height: 0;
-}
+
 
 .default-content-wrapper:nth-child(2) > p > picture {
   position: relative;
@@ -423,11 +419,6 @@ main .section.highlight {
   width: 483px;
 }
 
-/* Prefooter section */
-.section:nth-child(5) > div{
-  width: 1289px;
-  height: 170.094px;
-}
 
 .section:nth-child(5) > div > h3 {
   text-align: center;

@@ -159,87 +159,85 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
-// top header section
-const topHeaderSection = document.createElement('section');
-topHeaderSection.className = 'top-header-section';
+  // top header section
+  const topHeaderSection = document.createElement('section');
+  topHeaderSection.className = 'top-header-section';
 
-// inner header section
-const innerHeaderContainer = document.createElement('div');
-innerHeaderContainer.className = 'inner-header-container';
+  // inner header section
+  const innerHeaderContainer = document.createElement('div');
+  innerHeaderContainer.className = 'inner-header-container';
 
-// header top left row
-const headerTopLeftRow = document.createElement('div');
-headerTopLeftRow.className = 'header-top-left-row';
+  // header top left row
+  const headerTopLeftRow = document.createElement('div');
+  headerTopLeftRow.className = 'header-top-left-row';
 
-// region header top left
-const regionHeaderTopLeft = document.createElement('div');
-regionHeaderTopLeft.className = 'region region-header-top-left';
-headerTopLeftRow.append(regionHeaderTopLeft);
+  // region header top left
+  const regionHeaderTopLeft = document.createElement('div');
+  regionHeaderTopLeft.className = 'region region-header-top-left';
+  headerTopLeftRow.append(regionHeaderTopLeft);
 
-// block-forprofessionals
-const blockForProfessionals = document.createElement('div');
-blockForProfessionals.className = 'block block-block-content block-block-content3b9622e3-b2c5-49e2-9ad6-61b149181646';
-blockForProfessionals.id = 'block-forprofessionals';
-regionHeaderTopLeft.append(blockForProfessionals);
+  // block-forprofessionals
+  const blockForProfessionals = document.createElement('div');
+  blockForProfessionals.className = 'block block-block-content block-block-content3b9622e3-b2c5-49e2-9ad6-61b149181646';
+  blockForProfessionals.id = 'block-forprofessionals';
+  regionHeaderTopLeft.append(blockForProfessionals);
 
-// content block
-const professionalBlock = document.createElement('div');
-professionalBlock.className = 'content';
-professionalBlock.innerHTML = ' ';
-blockForProfessionals.append(professionalBlock);
+  // content block
+  const professionalBlock = document.createElement('div');
+  professionalBlock.className = 'content';
+  professionalBlock.innerHTML = ' ';
+  blockForProfessionals.append(professionalBlock);
 
-// header top right row
-const headerTopRightRow = document.createElement('div');
-headerTopRightRow.className = 'header-top-right-row';
+  // header top right row
+  const headerTopRightRow = document.createElement('div');
+  headerTopRightRow.className = 'header-top-right-row';
 
-// region header top right
-const regionHeaderTopRight = document.createElement('div');
-regionHeaderTopRight.className = 'region region-header-top-right';
-headerTopRightRow.append(regionHeaderTopRight);
+  // region header top right
+  const regionHeaderTopRight = document.createElement('div');
+  regionHeaderTopRight.className = 'region region-header-top-right';
+  headerTopRightRow.append(regionHeaderTopRight);
 
-// prescribinginfo
-const prescribinginfo = document.createElement('div');
-prescribinginfo.id = 'block-new-otsuka-abilifymycite-hcp-prescribinginfo';
-prescribinginfo.className = 'header-top header-top-left prescribing-info block block-block-content block-block-contentf3e8c581-3fa1-4b97-b769-cea9d477c953';
-regionHeaderTopRight.append(prescribinginfo);
+  // prescribinginfo
+  const prescribinginfo = document.createElement('div');
+  prescribinginfo.id = 'block-new-otsuka-abilifymycite-hcp-prescribinginfo';
+  prescribinginfo.className = 'header-top header-top-left prescribing-info block block-block-content block-block-contentf3e8c581-3fa1-4b97-b769-cea9d477c953';
+  regionHeaderTopRight.append(prescribinginfo);
 
-// prescribing content block
-const prescribingBlock = document.createElement('div');
-prescribingBlock.className = 'content';
-prescribingBlock.innerHTML = 'THIS SITE IS INTENDED FOR US HEALTHCARE PROFESSIONALS';
-prescribinginfo.append(prescribingBlock);
+  // prescribing content block
+  const prescribingBlock = document.createElement('div');
+  prescribingBlock.className = 'content';
+  prescribingBlock.innerHTML = 'THIS SITE IS INTENDED FOR US HEALTHCARE PROFESSIONALS';
+  prescribinginfo.append(prescribingBlock);
 
-const paragraph = document.createElement('p');
-prescribingBlock.append(paragraph);
+  const paragraph = document.createElement('p');
+  prescribingBlock.append(paragraph);
 
 
 
-innerHeaderContainer.append(headerTopLeftRow);
-innerHeaderContainer.append(headerTopRightRow);
-topHeaderSection.append(innerHeaderContainer);
+  innerHeaderContainer.append(headerTopLeftRow);
+  innerHeaderContainer.append(headerTopRightRow);
+  topHeaderSection.append(innerHeaderContainer);
 
-const navWrapper = document.createElement('div');
-navWrapper.className = 'nav-wrapper';
-navWrapper.append(nav);
-block.append(topHeaderSection)
-block.append(navWrapper);
+  const navWrapper = document.createElement('div');
+  navWrapper.className = 'nav-wrapper';
+  navWrapper.append(nav);
+  block.append(topHeaderSection)
+  block.append(navWrapper);
+
+
+
+ 
+    const menuItems = document.querySelectorAll('div.default-content-wrapper a');
+    const currentPath = window.location.pathname;
+    console.log(menuItems);
+    console.log(currentPath);
+  
+    menuItems.forEach(item => {
+        if (item.getAttribute('href') === currentPath) {
+          item.parentElement.classList.add('active');
+        }
+    });
+
 }
 
-const currentPath = window.location.pathname;
-console.log('Current Path:', currentPath); 
 
-
-const navLinks = document.querySelectorAll('div.header.block');
-console.log('Navigation Links:', navLinks); 
-
-navLinks.forEach(link => {
-
-    const linkPath = new URL(link.getAttribute('href'), window.location.origin).pathname;
-    console.log('Link Path:', linkPath); 
-
-
-    if (linkPath === currentPath) {
-        console.log('Match Found:', link);
-        link.classList.add('active');
-    }
-});

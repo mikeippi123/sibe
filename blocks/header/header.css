@@ -8,11 +8,6 @@ header .top-header-section{
   background: linear-gradient(to left, #273A25, 50%, transparent 50%);
 }
 
-header div div nav div div ul li a.active {
-  font-weight: bold;
-  background: black;
-}
-
 header .top-header-section .inner-header-container {
   display: flex;
   width: 100%;
@@ -39,7 +34,7 @@ header .top-header-section .inner-header-container .header-top-right-row {
   display: flex;
   align-items: center;
   position: relative;
-  width: 82%;
+  width: 81%;
   flex: 0 0 auto;
   background:#273A25;
   z-index:  -1;
@@ -238,6 +233,91 @@ header nav[aria-expanded='true'] {
     min-height: 0;
     overflow: visible;
   }
+  header nav .nav-tools ul li:hover {
+    border-bottom: 5px solid var(--dark-green, #273A25);
+    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+  }
+  header nav .nav-tools ul li a:hover {
+    text-decoration: none; 
+  }
+  header div div nav div div ul li.active {
+    border-bottom: 5px solid var(--dark-green, #273A25);
+    background: var(--HitBox, rgba(255, 255, 255, 0.00));
+  }
+
+  header nav .nav-tools {
+    display: block;
+    visibility: visible;
+    white-space: nowrap;
+    padding: 0px 16px 0px 0px;
+  }
+
+  header nav[aria-expanded='true'] .nav-tools {
+    align-self: start;
+  }
+
+  header nav .nav-tools .nav-drop {
+    position: relative;
+    padding-right: 16px;
+    cursor: pointer;
+  }
+
+  header nav .nav-tools .nav-drop::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.5em;
+    right: 2px;
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
+  }
+
+  header nav .nav-tools .nav-drop[aria-expanded='true']::after {
+    top: unset;
+    bottom: 0.5em;
+    transform: rotate(315deg);
+  }
+
+  header nav .nav-tools ul {
+    display: flex;
+    gap: 24px;
+    align-content: center;
+    justify-content: flex-end;
+  }
+
+  header .top-header-section .inner-header-container .header-top-left-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 14.3%;
+    flex: 0 0 auto;
+    border: transparent;
+    transform: skew(45deg) translateX(5px); /* Skew and translate */
+    transform-origin: top left;
+    background: transparent;
+    z-index: 0;
+    border-right: 43px solid #FFF;
+    height: 33px;
+  }
+  
+  header .top-header-section .inner-header-container .header-top-right-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    flex: 0 0 auto;
+    background:#273A25;
+    z-index:  -1;
+    height: 32px;
+  } 
+  header nav .nav-hamburger {
+    display: none;
+    visibility: hidden;
+  } 
 }
 
 header nav p {
@@ -328,12 +408,6 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   transform: rotate(-45deg);
 }
 
-@media (width >= 820px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
 
 /* brand */
 header .nav-brand {
@@ -386,6 +460,7 @@ header nav .nav-tools ul {
   margin-top: 32px;
 }
 
+
 header nav .nav-tools ul > li {
   color: #212529;
   text-align: center;
@@ -395,7 +470,7 @@ header nav .nav-tools ul > li {
   font-weight: 500;
   line-height: 150%; /* 24px */
   width: auto;
-  height: 100px;
+  height: 84px;
   display: flex;
   justify-content: flex-end; /* Aligns the container to the right */
   align-items: center;
@@ -410,80 +485,9 @@ header nav .nav-tools ul > li > ul > li {
   font-weight: 400;
 }
 
-@media (width >= 821px) {
-  header nav .nav-tools {
-    display: block;
-    visibility: visible;
-    white-space: nowrap;
-    padding: 0px 16px 0px 0px;
-  }
 
-  header nav[aria-expanded='true'] .nav-tools {
-    align-self: start;
-  }
-
-  header nav .nav-tools .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
-
-  header nav .nav-tools .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
-
-  header nav .nav-tools .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
-
-  header nav .nav-tools ul {
-    display: flex;
-    gap: 24px;
-    align-content: center;
-    justify-content: flex-end;
-  }
-
-  header .top-header-section .inner-header-container .header-top-left-row {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 13.3%;
-    flex: 0 0 auto;
-    border: transparent;
-    transform: skew(45deg) translateX(5px); /* Skew and translate */
-    transform-origin: top left;
-    background: transparent;
-    z-index: 0;
-    border-right: 43px solid #FFF;
-    height: 33px;
-  }
-  
-  header .top-header-section .inner-header-container .header-top-right-row {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 70%;
-    flex: 0 0 auto;
-    background:#273A25;
-    z-index:  -1;
-    height: 32px;
-  }  
-}
 
 /* tools */
-
 @media (width <= 820px) {
   header .nav-wrapper{
     padding-top: 16x;
@@ -506,7 +510,6 @@ header nav .nav-tools ul > li > ul > li {
     align-items: center;
     text-align: center;
     word-wrap: break-word; /* or use overflow-wrap: break-word; */
-
   }
     /* brand */
   header .nav-brand {
@@ -547,11 +550,12 @@ header nav .nav-tools ul > li > ul > li {
     margin-top: 0px;
   }
   header nav .nav-tools ul > li {
-    color: var(--dark-green, #273A25);
+    color: var(--dark-green-dark-green-300, #939D92);
     font-family: "Helvetica Neue";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    line-height: 150%; /* 24px */
     display: flex;
     align-items: start;
     justify-content: start;
@@ -562,6 +566,14 @@ header nav .nav-tools ul > li > ul > li {
     gap: 4px;
     align-self: stretch;
   }
+  header div div nav div div ul li.active {
+    color: var(--dark-green, #273A25);
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+  }
   header nav .nav-tools {
     position: relative;
     margin-left: auto;
@@ -571,6 +583,18 @@ header nav .nav-tools ul > li > ul > li {
     align-items: end;
 
   }
+  header nav .nav-tools ul li:hover {
+    color: var(--dark-green, #273A25);
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+  }
+  header nav .nav-tools ul li a:hover {
+    text-decoration: none; 
+  }
+
 }
 
 @media (width <= 562px) {
