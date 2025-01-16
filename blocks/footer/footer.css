@@ -1,4 +1,13 @@
-.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1){
+
+.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1) > picture{
+  position: relative;
+  align-self: stretch;
+  max-width: 100%;
+  height: 66px;
+  background-size: 100% 66px;
+}
+
+.footer-wrapper .footer.block .section:nth-child(2) > div > p:nth-child(2){
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
@@ -10,7 +19,7 @@
   line-height: 24px;
 }
 
-.footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
+.footer-wrapper .footer.block .section:nth-child(4) > div > p:nth-child(4){
   position: relative;
   align-self: stretch;
   font-family: --footnote-microcopy-font-family, sans-serif;
@@ -21,7 +30,7 @@
   line-height: 24px;
 }
 
-.footer-wrapper .footer.block .section:nth-child(3) a:any-link{
+.footer-wrapper .footer.block .section:nth-child(4) a:any-link{
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
@@ -40,7 +49,7 @@
   justify-content: space-between;
   padding: 24px 48px 48px;
   position: relative;
-  background-color: --light-color;
+  background-color: --footer-background-color;
 }
 
 .mobile-footer {
@@ -50,11 +59,11 @@
   align-items: flex-start;
   padding: 0 0 48px;
   position: relative;
-  background-color: --light-color;
+  background-color: --footer-background-color;
 }
 
   /* text left section */
-.desktop-footer .section:nth-child(1) {
+.desktop-footer .section:nth-child(2) {
   display: inline-flex;
   align-items: center;
   gap: 72px;
@@ -63,7 +72,7 @@
 }
 
 /* text right section */
-.desktop-footer .section:nth-child(3) {
+.desktop-footer .section:nth-child(4) {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
