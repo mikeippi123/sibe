@@ -2,10 +2,10 @@
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
-  font-family: Roboto-Regular, Helvetica, sans-serif;
-  font-weight: 400;
-  color: rgb(33 37 41 100%);
-  font-size: 16px;
+  font-family: --footnote-microcopy-font-family, sans-serif;
+  font-weight: --footnote-microcopy-it-font-weight;
+  color: --black;
+  font-size: --footnote-microcopy-it-font-size;
   letter-spacing: 0;
   line-height: 24px;
 }
@@ -13,10 +13,10 @@
 .footer-wrapper .footer.block .section:nth-child(3) > div > p:nth-child(3){
   position: relative;
   align-self: stretch;
-  font-family: Roboto-Regular, Helvetica, sans-serif;
-  font-weight: 400;
-  color: rgb(33 37 41 100%);
-  font-size: 16px;
+  font-family: --footnote-microcopy-font-family, sans-serif;
+  font-weight: --footnote-microcopy-it-font-weight;
+  color: --black;
+  font-size: --footnote-microcopy-it-font-size;
   letter-spacing: 0;
   line-height: 24px;
 }
@@ -25,10 +25,10 @@
   position: relative;
   width: fit-content;
   margin-top: -1.00px;
-  font-family: "Helvetica Neue-Bold", Helvetica, sans-serif;
-  font-weight: 700;
-  color: #198754;
-  font-size: 16px;
+  font-family: --bold-body-font-family, sans-serif;
+  font-weight: --bold-body-font-weight;
+  color: --green-link;
+  font-size: --bold-body-font-size;
   letter-spacing: 0;
   line-height: 24px;
   white-space: nowrap;
@@ -40,17 +40,17 @@
   justify-content: space-between;
   padding: 24px 48px 48px;
   position: relative;
-  background-color: #dee2e6;
+  background-color: --light-color;
 }
 
 .mobile-footer {
   display: flex;
   flex-direction: column;
-  width: 375px;
+  width: 100%;
   align-items: flex-start;
   padding: 0 0 48px;
   position: relative;
-  background-color: #dee2e6;
+  background-color: --light-color;
 }
 
   /* text left section */
@@ -71,10 +71,10 @@
   gap: 16px;
   position: relative;
   flex: 0 0 auto;
-  font-family: Roboto-Regular, Helvetica, sans-serif;
-  font-weight: 400;
-  color: rgb(33 37 41 100%);;
-  font-size: 16px;
+  font-family: --footnote-microcopy-font-family, sans-serif;
+  font-weight: --footnote-microcopy-it-font-weight;
+  color: --black;
+  font-size: --footnote-microcopy-it-font-size;
   letter-spacing: 0;
   line-height: 18px;
 }
