@@ -11,6 +11,8 @@
 
 .footer-wrapper .footer {
   width: 1366px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 70px;
   padding-bottom: 48px;
 }
