@@ -31,32 +31,6 @@
           ]
         }
       ]
-    },
-    {
-      "component": "multiselect",
-      "name": "size",
-      "label": "Size",
-      "options": [
-        {
-          "name": "FullWidth",
-          "value": "fullwidth"
-        }
-      ]
-    },
-    {
-      "component": "select",
-      "name": "backgroundType",
-      "label": "Background Color",
-      "options": [
-        {
-          "name": "default",
-          "value": ""
-        },
-        {
-          "name": "Gray",
-          "value": "gray"
-        }
-      ]
     }
   ],
   "filters": [

@@ -432,17 +432,6 @@ button.secondary {
   height: 380px;
   width: 483px;
 }
-main .section.fullwidth{
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
-}
-
-[data-backgroundtype="gray"] {
-  background: var( --gray-200);
-}
-
 
 /* Prefooter section */
 .section:nth-child(5) > div{
