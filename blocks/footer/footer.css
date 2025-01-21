@@ -1,14 +1,17 @@
 .footer-wrapper {
   width: 100%;
   display: flex;
-  background-color: #dee2e6;
+  background-color: --footer-background-color;
+  font-family: var(--body-font-family);
+  font-size: --body-font-size;
+  font-style: normal;
+  font-weight: --body-font-weight;
   justify-content: center;
 }
 
 .footer-wrapper .footer {
   width: 1366px;
-  padding-top: 70px;
-  padding-bottom: 48px;
+  padding: 70px 30px 48px;
 }
 
 .footer-wrapper .columns div > div:first-of-type {
@@ -29,7 +32,10 @@
     list-style-type: none; /* Remove default list styling */ 
     padding: 0;           /* Remove padding */ 
     margin: 0;            /* Remove margin */ 
-    display: flex;        /* Use flexbox for horizontal layout */ 
+    display: flex;        /* Use flexbox for horizontal layout */
+    font-family: var(--footnote-microcopy-link-font-family);
+    font-weight: --bold-body-font-weight;
+    color: var(--green-link);
 
     li {
       margin: 0 10px;      /* Add some spacing between items */ 
@@ -37,11 +43,13 @@
       a {
         text-decoration: none;
         color: var(--green-link);
+        text-decoration-line: underline;
       }
     }
 
     li:not(:last-child)::after { 
-      content: "|";        /* Add pipe after each item except the last */ 
+      content: "|";        /* Add pipe after each item except the last */
+      font-weight: --bold-body-font-weight;
       margin-left: 20px;  /* Space between item and pipe */ 
     } 
   }
