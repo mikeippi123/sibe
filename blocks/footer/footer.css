@@ -1,89 +1,65 @@
-
-.footer-wrapper .footer.block .section:nth-child(1) > div > p:nth-child(1) > picture{
-  position: relative;
-  align-self: stretch;
-  max-width: 100%;
-  height: 66px;
-  background-size: 100% 66px;
-}
-
-.footer-wrapper .footer.block .section:nth-child(2) > div > p:nth-child(2){
-  position: relative;
-  align-self: stretch;
-  margin-top: -1.00px;
-  font-family: --footnote-microcopy-font-family, sans-serif;
-  font-weight: --footnote-microcopy-it-font-weight;
-  color: --black;
-  font-size: --footnote-microcopy-it-font-size;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-.footer-wrapper .footer.block .section:nth-child(4) > div > p:nth-child(4){
-  position: relative;
-  align-self: stretch;
-  font-family: --footnote-microcopy-font-family, sans-serif;
-  font-weight: --footnote-microcopy-it-font-weight;
-  color: --black;
-  font-size: --footnote-microcopy-it-font-size;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
-.footer-wrapper .footer.block .section:nth-child(4) a:any-link{
-  position: relative;
-  width: fit-content;
-  margin-top: -1.00px;
-  font-family: --bold-body-font-family, sans-serif;
-  font-weight: --bold-body-font-weight;
-  color: --green-link;
-  font-size: --bold-body-font-size;
-  letter-spacing: 0;
-  line-height: 24px;
-  white-space: nowrap;
-}
-
-.desktop-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 48px 48px;
-  position: relative;
-  background-color: --footer-background-color;
-}
-
-.mobile-footer {
-  display: flex;
-  flex-direction: column;
+.footer-wrapper {
   width: 100%;
-  align-items: flex-start;
-  padding: 0 0 48px;
-  position: relative;
-  background-color: --footer-background-color;
-}
-
-  /* text left section */
-.desktop-footer .section:nth-child(2) {
-  display: inline-flex;
-  align-items: center;
-  gap: 72px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-/* text right section */
-.desktop-footer .section:nth-child(4) {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: flex;
+  background-color: #dee2e6;
   justify-content: center;
-  gap: 16px;
+}
+
+.footer-wrapper .footer {
+  width: 1366px;
+  padding-top: 70px;
+  padding-bottom: 48px;
+}
+
+.footer-wrapper .columns div > div:first-of-type {
+  text-align: start;
+  display: block;
+}
+
+.footer-wrapper .columns div > div:first-of-type picture {
+  display: inline-block;
+}
+
+.footer-wrapper .columns div > div:nth-of-type(2) {
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */ 
+    padding: 0;           /* Remove padding */ 
+    margin: 0;            /* Remove margin */ 
+    display: flex;        /* Use flexbox for horizontal layout */ 
+
+    li {
+      margin: 0 10px;      /* Add some spacing between items */ 
+
+      a {
+        text-decoration: none;
+        color: var(--green-link);
+      }
+    }
+
+    li:not(:last-child)::after { 
+      content: "|";        /* Add pipe after each item except the last */ 
+      margin-left: 20px;  /* Space between item and pipe */ 
+    } 
+  }
+
+}
+
+.footer-wrapper .logo {
   position: relative;
   flex: 0 0 auto;
-  font-family: --footnote-microcopy-font-family, sans-serif;
-  font-weight: --footnote-microcopy-it-font-weight;
-  color: --black;
-  font-size: --footnote-microcopy-it-font-size;
-  letter-spacing: 0;
-  line-height: 18px;
+}
+
+footer.footer-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 66px;
+  width: 100%;
+  background: url("/images/footerLines.png") repeat-x;
+  background-size: 100% 66px
 }
