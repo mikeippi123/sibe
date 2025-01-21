@@ -1,7 +1,8 @@
 .footer-wrapper {
   width: 100%;
   display: flex;
-  background-color: #dee2e6;
+  background-color: --footer-background-color;
+  font-family: var(--footnote-microcopy-font-family);
   justify-content: center;
 }
 
@@ -36,6 +37,7 @@
 
       a {
         text-decoration: none;
+        font-family: var(--footnote-microcopy-link-font-family);
         color: var(--green-link);
       }
     }

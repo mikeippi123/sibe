@@ -135,6 +135,7 @@
   --body-line-height: 150%;
   --body-font-style: normal;
   --footnote-microcopy-font-family: "Roboto", helvetica, sans-serif;
+  --footnote-microcopy-link-font-family: "helvetica Neue", helvetica, sans-serif;
   --footnote-microcopy-font-weight: 400;
   --footnote-microcopy-font-size: 10.4px;
   --footnote-microcopy-letter-spacing: 0px;
