@@ -10,7 +10,10 @@
  * governing permissions and limitations under the License.
  */
 
- :root {
+:root {
+  /* Breakpoints */
+  --bp-large: 85.375em; /* 1366px */
+
   /* colors */
   --background-color: white;
   --light-color: #f8f8f8;
@@ -36,7 +39,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 82px;
 
   /* Figma styleguide colors */
   --fpo: #ff00a8;
@@ -224,9 +227,9 @@ body.appear {
 }
 
 main {
-  width: 1366px; /* Fixed width for the main content area */
-  padding: 20px; /* Padding inside the main content area */
-  border-radius: 8px; /* Rounded corners for aesthetics */
+  max-width: var(--bp-large); /* Fixed width for the main content area */
+  margin: 0 auto;
+  margin-top: var(--nav-height);
 }
 
 header {
