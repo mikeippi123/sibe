@@ -1,6 +1,7 @@
 .footer-wrapper {
   width: 100%;
   display: flex;
+  height: auto;
   background-color: --footer-background-color;
   font-family: var(--body-font-family);
   font-size: --body-font-size;
@@ -44,6 +45,7 @@
       a {
         text-decoration: none;
         color: var(--green-link);
+        text-decoration-line: underline;
       }
     }
 
