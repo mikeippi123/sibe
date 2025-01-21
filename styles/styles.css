@@ -415,6 +415,12 @@ button.secondary {
     height: 379.328px;
 }
 
+/* Full width element */
+.full-width-element {
+  margin-left: calc(-100vw / 2 + var(--bp-large) / 2); 
+  margin-right: calc(-100vw / 2 + var(--bp-large) / 2);
+}
+
 .default-content-wrapper:nth-child(2) {
   background-color: black;
   height: 0;
