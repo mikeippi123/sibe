@@ -212,18 +212,21 @@
   }
 }
 
+html,
 body {
-  display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  padding: 0;
+  width: 100%;
 }
 
 body.appear {
   display: block;
+}
+
+main {
+  width: 1366px; /* Fixed width for the main content area */
+  padding: 20px; /* Padding inside the main content area */
+  border-radius: 8px; /* Rounded corners for aesthetics */
 }
 
 header {
@@ -328,10 +331,6 @@ pre {
   white-space: pre;
 }
 
-main > div {
-  margin: 40px 16px;
-}
-
 input,
 textarea,
 select,
@@ -396,12 +395,6 @@ button.secondary {
   color: var(--text-color);
 }
 
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
 .icon {
   display: inline-block;
   height: 24px;
@@ -411,35 +404,6 @@ main img {
 .icon img {
   height: 100%;
   width: 100%;
-}
-
-/* sections */
-main > .section {
-  margin: 40px 0;
-}
-
-main > .section > div {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 24px;
-}
-
-main > .section:first-of-type {
-  margin-top: 0;
-}
-
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
-}
-
-/* section metadata */
-main .section.light,
-main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
 }
 
 /* Hero section */
