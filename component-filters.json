@@ -15,7 +15,11 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "teaser",
+      "prefooter",
+      "carousel",
+      "embed"
     ]
   },
   {
