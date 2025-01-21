@@ -25,8 +25,8 @@
           "label": "Style",
           "options": [
             {
-            "name": "Reference Text",
-            "value": "reference_text"
+              "name": "Highlight",
+              "value": "highlight"
             }
           ]
         }
