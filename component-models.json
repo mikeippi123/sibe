@@ -112,55 +112,47 @@
     ]
   },
   {
+    "component": "multiselect",
+    "name": "size",
+    "label": "Size",
+    "options": [
+      {
+        "name": "FullWidth",
+        "value": "fullwidth"
+      }
+    ]
+  },
+  {
+    "component": "select",
+    "name": "backgroundType",
+    "label": "Background Color",
+    "options": [
+      {
+        "name": "default",
+        "value": ""
+      },
+      {
+        "name": "Gray",
+        "value": "gray"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      },
       {
         "component": "reference",
         "valueType": "string",
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },
@@ -209,172 +201,6 @@
         "name": "imageAlt",
         "label": "Alt",
         "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "teaser",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "prefooter",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "slide",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
       },
       {
         "component": "richtext",

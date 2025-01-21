@@ -502,6 +502,18 @@ function decorateSections(main) {
             .filter((style) => style)
             .map((style) => toClassName(style.trim()));
           styles.forEach((style) => section.classList.add(style));
+        } else if (key === 'size') {
+          const sizes = meta.size
+            .split(',')
+            .filter((size) => size)
+            .map((size) => toClassName(size.trim()));
+          sizes.forEach((size) => section.classList.add(size));
+        } else if (key === 'backgroundType') {
+          const backgroundTypes = meta.backgroundType
+            .split(',')
+            .filter((backgroundType) => backgroundType)
+            .map((backgroundType) => toClassName(backgroundType.trim()));
+          backgroundTypes.forEach((backgroundType) => section.classList.add(backgroundType));
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
