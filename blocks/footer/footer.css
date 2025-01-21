@@ -19,17 +19,6 @@
   line-height: 24px;
 }
 
-.footer-wrapper .footer.block .section:nth-child(2) > div > p:nth-child(2){
-  position: relative;
-  align-self: stretch;
-  font-family: --footnote-microcopy-font-family, sans-serif;
-  font-weight: --footnote-microcopy-it-font-weight;
-  color: --black;
-  font-size: --footnote-microcopy-it-font-size;
-  letter-spacing: 0;
-  line-height: 24px;
-}
-
 .footer-wrapper .footer.block .section:nth-child(3) a:any-link{
   position: relative;
   width: fit-content;
