@@ -1,7 +1,6 @@
 .footer-wrapper {
   width: 100%;
   display: flex;
-  height: auto;
   background-color: --footer-background-color;
   font-family: var(--body-font-family);
   font-size: --body-font-size;
