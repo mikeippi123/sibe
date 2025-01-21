@@ -47,7 +47,8 @@
     }
 
     li:not(:last-child)::after { 
-      content: "|";        /* Add pipe after each item except the last */ 
+      content: "|";        /* Add pipe after each item except the last */
+      font-weight: --bold-body-font-weight;
       margin-left: 20px;  /* Space between item and pipe */ 
     } 
   }
