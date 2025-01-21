@@ -209,27 +209,6 @@ header .nav-wrapper {
 
 }
 
-a.button:any-link, button{
-  box-shadow: none;
-  background: transparent;
-  text-shadow: none;
-  min-width: 105px;
-  border-radius: 4px;
-  transition: background-color .25s ease, border-color .25s ease;
-  text-decoration: none !important;
-  box-sizing: border-box;
-  font-size: 13px;
-  font-weight: 400;
-  border: 1px solid #f8f8f8;
-  padding: 9px 22px;
-  min-height: 38px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border-color: #4271bd;
-  color: #4271bd;
-  margin:7px 0 0;
-}
-
 header nav {
   box-sizing: border-box;
   display: grid;
