@@ -27,10 +27,6 @@
             {
               "name": "Highlight",
               "value": "highlight"
-            },
-            {
-            "name": "Reference Text",
-            "value": "reference_text"
             }
           ]
         }
