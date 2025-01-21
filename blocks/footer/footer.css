@@ -33,16 +33,16 @@
     list-style-type: none; /* Remove default list styling */ 
     padding: 0;           /* Remove padding */ 
     margin: 0;            /* Remove margin */ 
-    display: flex;        /* Use flexbox for horizontal layout */ 
+    display: flex;        /* Use flexbox for horizontal layout */
+    font-family: var(--footnote-microcopy-link-font-family);
+    font-weight: --bold-body-font-weight;
+    color: var(--green-link);
 
     li {
       margin: 0 10px;      /* Add some spacing between items */ 
 
       a {
         text-decoration: none;
-        font-family: var(--footnote-microcopy-link-font-family);
-        font-weight: --bold-body-font-weight;
-        color: var(--green-link);
       }
     }
 
