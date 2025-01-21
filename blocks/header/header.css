@@ -276,6 +276,13 @@ header nav[aria-expanded='true'] {
   header div div nav div div ul li.active {
     border-bottom: 5px solid var(--dark-green, #273A25);
     background: var(--hitbox);
+    color: #000;
+    text-align: center;
+    font-family: var(--body-regular-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 24px */
   }
 
   header nav .nav-tools {
