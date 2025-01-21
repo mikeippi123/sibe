@@ -25,8 +25,19 @@
           "label": "Style",
           "options": [
             {
-              "name": "Highlight",
-              "value": "highlight"
+              "name": "Gray",
+              "value": "gray"
+            }
+          ]
+        },
+        {
+          "component": "multiselect",
+          "name": "size",
+          "label": "Size",
+          "options": [
+            {
+              "name": "FullWidth",
+              "value": "fullwidth"
             }
           ]
         }
