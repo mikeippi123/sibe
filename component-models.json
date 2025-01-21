@@ -104,8 +104,19 @@
         "label": "Style",
         "options": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "name": "Gray",
+            "value": "gray"
+          }
+        ]
+      },
+      {
+        "component": "multiselect",
+        "name": "size",
+        "label": "Size",
+        "options": [
+          {
+            "name": "FullWidth",
+            "value": "fullwidth"
           }
         ]
       }
@@ -156,31 +167,6 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
-      }
-    ]
-  },
-  {
-    "id": "embed",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "embed_placeholder",
-        "label": "Placeholder Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_placeholderAlt",
-        "value": "",
-        "label": "Placeholder Image Alt Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_uri",
-        "label": "URI"
       }
     ]
   },
