@@ -2,7 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = window.matchMedia('(min-width: 821px)');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
@@ -153,14 +153,81 @@ export default async function decorate(block) {
       <span class="nav-hamburger-icon"></span>
     </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
+  nav.appendChild(hamburger);
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+  // top header section
+  const topHeaderSection = document.createElement('section');
+  topHeaderSection.className = 'top-header-section';
+
+  // inner header section
+  const innerHeaderContainer = document.createElement('div');
+  innerHeaderContainer.className = 'inner-header-container';
+
+  // header top left row
+  const headerTopLeftRow = document.createElement('div');
+  headerTopLeftRow.className = 'header-top-left-row';
+
+  // region header top left
+  const regionHeaderTopLeft = document.createElement('div');
+  regionHeaderTopLeft.className = 'region region-header-top-left';
+  headerTopLeftRow.append(regionHeaderTopLeft);
+
+  // block-forprofessionals
+  const blockForProfessionals = document.createElement('div');
+  blockForProfessionals.className = 'block block-block-content block-block-content3b9622e3-b2c5-49e2-9ad6-61b149181646';
+  blockForProfessionals.id = 'block-forprofessionals';
+  regionHeaderTopLeft.append(blockForProfessionals);
+
+  // content block
+  const professionalBlock = document.createElement('div');
+  professionalBlock.className = 'content';
+  professionalBlock.innerHTML = ' ';
+  blockForProfessionals.append(professionalBlock);
+
+  // header top right row
+  const headerTopRightRow = document.createElement('div');
+  headerTopRightRow.className = 'header-top-right-row';
+
+  // region header top right
+  const regionHeaderTopRight = document.createElement('div');
+  regionHeaderTopRight.className = 'region region-header-top-right';
+  headerTopRightRow.append(regionHeaderTopRight);
+
+  // prescribinginfo
+  const prescribinginfo = document.createElement('div');
+  prescribinginfo.id = 'block-new-otsuka-abilifymycite-hcp-prescribinginfo';
+  prescribinginfo.className = 'header-top header-top-left prescribing-info block block-block-content block-block-contentf3e8c581-3fa1-4b97-b769-cea9d477c953';
+  regionHeaderTopRight.append(prescribinginfo);
+
+  // prescribing content block
+  const prescribingBlock = document.createElement('div');
+  prescribingBlock.className = 'content';
+  prescribingBlock.innerHTML = 'THIS SITE IS INTENDED FOR US HEALTHCARE PROFESSIONALS';
+  prescribinginfo.append(prescribingBlock);
+
+  const paragraph = document.createElement('p');
+  prescribingBlock.append(paragraph);
+
+  innerHeaderContainer.append(headerTopLeftRow);
+  innerHeaderContainer.append(headerTopRightRow);
+  topHeaderSection.append(innerHeaderContainer);
+
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+  block.append(topHeaderSection);
   block.append(navWrapper);
+
+  const menuItems = document.querySelectorAll('div.default-content-wrapper a');
+  const currentPath = window.location.pathname;
+
+  menuItems.forEach((item) => {
+    if (item.getAttribute('href') === currentPath) {
+      item.parentElement.classList.add('active');
+    }
+  });
 }
