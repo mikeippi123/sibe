@@ -410,11 +410,6 @@ button.secondary {
   width: 100%;
 }
 
-/* Hero section */
-.section.hero-container {
-    height: 379.328px;
-}
-
 /* section metadata */
 main .section.gray {
   background: var(--gray-200);
