@@ -416,10 +416,11 @@ main .section.gray {
 }
 
 main .section.fullwidth{
-  width: 100%;
-  margin: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
   padding: 0;
-  box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
+  box-sizing: border-box;
 }
 
 /* Full width element */
