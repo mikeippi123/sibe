@@ -57,6 +57,16 @@
     ]
   },
   {
+    "id": "isi",
+    "fields": [
+      {
+        "component": "text",
+        "name": "isi",
+        "label": "Isi"
+      }
+    ]
+  },
+  {
     "id": "button",
     "fields": [
       {
