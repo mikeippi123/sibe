@@ -16,7 +16,14 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
     ]
   },
   {
