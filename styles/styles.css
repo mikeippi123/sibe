@@ -231,6 +231,7 @@ main {
   max-width: var(--bp-large); /* Fixed width for the main content area */
   margin: 0 auto;
   margin-top: var(--nav-height);
+  background-color: var(--white);
 }
 
 header {
