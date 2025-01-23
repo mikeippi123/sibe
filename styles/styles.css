@@ -229,7 +229,7 @@ body.appear {
 }
 
 main {
-  max-width: var(--bp-large); /* Fixed width for the main content area */
+  max-width: var(--bp-large);
   margin: 0 auto;
   margin-top: var(--nav-height);
   background-color: var(--white);
@@ -237,6 +237,7 @@ main {
 
 header {
   height: var(--nav-height);
+  width: 100%;
 }
 
 header .header,
@@ -255,7 +256,6 @@ h3,
 h4,
 h5,
 h6 {
-  width: 1334px;
   top: 0;
   left: 0;
   font-family: var(--h1-font-family);
@@ -419,10 +419,11 @@ main .section.gray {
 
 main .section.fullwidth{
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding: 0;
-  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* Full width element */
