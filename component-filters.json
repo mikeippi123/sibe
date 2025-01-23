@@ -14,6 +14,7 @@
       "title",
       "isi",
       "hero",
+      "video",
       "cards",
       "columns",
       "fragment"
@@ -30,6 +31,10 @@
     "components": [
       "column"
     ]
+  },
+  {
+    "id":"video",
+    "components":[]
   },
   {
     "id": "column",
