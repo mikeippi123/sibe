@@ -1,11 +1,11 @@
 .footer-wrapper {
   width: 100%;
   display: flex;
-  background-color: --footer-background-color;
+  background-color: var(--footer-background-color);
   font-family: var(--body-font-family);
-  font-size: --body-font-size;
+  font-size: var(--body-font-size);
   font-style: normal;
-  font-weight: --body-font-weight;
+  font-weight: var(--body-font-weight);
   justify-content: center;
 }
 
@@ -68,6 +68,6 @@ footer.footer-wrapper::before {
   left: 0;
   height: 66px;
   width: 100%;
-  background: url("/images/footerLines.png") repeat-x;
+  background: url("./media_1f79aedd4fadc0d15af99d31259d84202af84b57a.png") repeat-x;
   background-size: 100% 66px
 }
