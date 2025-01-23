@@ -14,9 +14,17 @@
       "title",
       "isi",
       "hero",
+      "video",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "tabs"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
     ]
   },
   {
@@ -30,6 +38,10 @@
     "components": [
       "column"
     ]
+  },
+  {
+    "id":"video",
+    "components":[]
   },
   {
     "id": "column",
