@@ -5,7 +5,7 @@ header .top-header-section{
   position: fixed;
   z-index: 2;
   border: white;
-  background: linear-gradient(to left, #273A25, 50%, transparent 50%);
+  background: linear-gradient(to left, #273A25, 50%, transparent 0%);
 }
 
 header .top-header-section .inner-header-container {
@@ -206,7 +206,6 @@ header .nav-wrapper {
   z-index: 1;
   position: fixed;
   height: 120px;
-
 }
 
 header nav {
