@@ -229,7 +229,7 @@ body.appear {
 }
 
 main {
-  max-width: var(--bp-large);
+  max-width: var(--bp-large); 
   margin: 0 auto;
   margin-top: var(--nav-height);
   background-color: var(--white);
@@ -418,12 +418,12 @@ main .section.gray {
 }
 
 main .section.fullwidth{
-  width: 100vw;
+  width: 99vw;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  left: 49%;
+  right: 49%;
+  margin-left: -49vw;
+  margin-right: -49vw;
 }
 
 /* Full width element */
