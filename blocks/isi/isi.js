@@ -25,4 +25,6 @@ export default function decorate(block) {
     }),
   })
   .then((res) => res.json());
+
+  block.append(res);
 }
