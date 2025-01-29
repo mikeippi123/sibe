@@ -1,5 +1,9 @@
 .carousel .carousel-slides-container {
   position: relative;
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 1366px;
 }
 
 .carousel .carousel-slides,
@@ -14,6 +18,10 @@
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   overflow: scroll clip;
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 1366px;
 }
 
 .carousel .carousel-slides::-webkit-scrollbar {
@@ -52,11 +60,9 @@
 }
 
 .carousel .carousel-slide .carousel-slide-content {
-  z-index: 1;
   margin: 68px;
   padding: 16px;
   color: white;
-  background-color: rgba(19 19 19 / 75%);
   position: relative;
   width: var(--slide-content-width, auto);
 }
@@ -66,25 +72,26 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px 12px;
-  padding: 12px;
-  background-color: var(--light-color);
+  padding: 0;
+  overflow: hidden;
   line-height: 0;
+  bottom: 30px;
+  position: relative;
+  background: transparent;
 }
 
 .carousel .carousel-slide-indicator button {
-  width: 24px;
-  height: 24px;
-  margin: 0;
+  width: 30px;
+  height: 3px;
+  background: black;
+  opacity: .5;
   padding: 0;
-  border-radius: 50%;
-  background-color: #dadada;
-  transition: background-color 0.2s;
 }
 
 .carousel .carousel-slide-indicator button:disabled,
 .carousel .carousel-slide-indicator button:hover,
 .carousel .carousel-slide-indicator button:focus-visible {
-  background-color: var(--text-color);
+  background-color: var(--dark-green);
 }
 
 .carousel .carousel-navigation-buttons {
@@ -102,13 +109,14 @@
 /* stylelint-disable-next-line no-descending-specificity */
 .carousel .carousel-navigation-buttons button {
   position: relative;
-  width: 44px;
-  height: 44px;
+  width: 32px;
+  height: 32px;
   margin: 0;
   border-radius: 50%;
   padding: 0;
-  background-color: rgba(19 19 19 / 25%);
   transition: background-color 0.2s;
+  background-color: transparent;
+  color: black;
 }
 
 .carousel .carousel-navigation-buttons button:hover,
@@ -135,7 +143,7 @@
   left: calc(50% - 2px);
 }
 
-@media (width >= 600px) {
+@media (width >= 835px) {
   .carousel .carousel-navigation-buttons {
     left: 24px;
     right: 24px;
@@ -144,10 +152,91 @@
   .carousel .carousel-slide .carousel-slide-content {
     --slide-content-width: calc((100% - 184px) / 2);
 
-    margin: 92px;
+    margin: 246px auto 20px;
+    max-width: 1126px;
+    max-height: 78px;
+    height: 100%;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 36px;
+    text-align: center;
+  }
+
+  .carousel .carousel-slide .carousel-slide-content h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 10px;
+    color: var(--dark-green, #273A25);
   }
 
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
     --slide-content-width: auto;
+  }
+}
+
+
+@media (width <= 834px){
+  .carousel .carousel-slide .carousel-slide-content {
+    --slide-content-width: calc((100% - 184px) / 2);
+
+    margin: 180px auto 20px;
+    max-width: 834px;
+    height: 100%;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 36px;
+    text-align: center;
+  }
+
+  .carousel .carousel-slides-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    max-width: 834px;
+  }
+
+  .carousel .carousel-slide .carousel-slide-content h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 10px;
+    color: var(--dark-green, #273A25);
+  }
+}
+
+@media (width <= 396px){
+  .carousel .carousel-slide .carousel-slide-content {
+    --slide-content-width: calc((100% - 184px) / 2);
+
+    margin: 408.7px auto 19.93px;
+    max-width: 335px;
+    height: 100%;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 36px;
+    text-align: center;
+  }
+
+  .carousel .carousel-slides-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-height: 700px;
+    max-width: 375px;
+  }
+
+  .carousel .carousel-slides{
+    width: 100%;
+    max-height: 700px;
+    max-width: 375px;
+  }
+
+  .carousel .carousel-slide .carousel-slide-content h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 10px;
+    color: var(--dark-green, #273A25);
+  }
+
+  .carousel .carousel-slide .carousel-slide-image picture {
+    width: 100%;
+    height: 700px;
+    max-height: 700px;
+    max-width: 375px;
+    object-fit: cover;
   }
 }
