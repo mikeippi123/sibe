@@ -3,8 +3,13 @@
 }
 
 .isi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 16px;
   position: relative;
-  padding: 40px 24px;
   min-height: 200px;
 }
 
@@ -12,4 +17,46 @@
   .hero {
     padding: 40px 32px;
   }
+}
+
+.isi .text {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--footnote-microcopy-font-family);
+  font-weight: var(--footnote-microcopy-font-weight);
+  color: var(--body-textbody-color);
+  font-size: var(--footnote-microcopy-font-size);
+  letter-spacing: var(--footnote-microcopy-letter-spacing);
+  line-height: var(--footnote-microcopy-line-height);
+  font-style: var(--footnote-microcopy-font-style);
+}
+
+.isi .div {
+  position: relative;
+  align-self: stretch;
+  font-family: "Helvetica-Bold", Helvetica;
+  font-weight: 400;
+  color: var(--body-textbody-color);
+  font-size: 10.4px;
+  letter-spacing: 0;
+  line-height: 10.4px;
+}
+
+.isi .text-wrapper {
+  font-weight: var(--footnote-microcopy-font-weight);
+  line-height: var(--footnote-microcopy-line-height);
+  font-family: var(--footnote-microcopy-font-family);
+  font-style: var(--footnote-microcopy-font-style);
+  letter-spacing: var(--footnote-microcopy-letter-spacing);
+  font-size: var(--footnote-microcopy-font-size);
+}
+
+.isi .span {
+  font-family: var(--footnote-microcopy-IT-font-family);
+  font-style: var(--footnote-microcopy-IT-font-style);
+  font-weight: var(--footnote-microcopy-IT-font-weight);
+  letter-spacing: var(--footnote-microcopy-IT-letter-spacing);
+  line-height: var(--footnote-microcopy-IT-line-height);
+  font-size: var(--footnote-microcopy-IT-font-size);
 }
