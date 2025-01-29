@@ -24,7 +24,7 @@ export default function decorate(block) {
         `,
     }),
   })
-  .then((res) => res.json())
+  .then((result) => result.json())
   .then((result) => console.log(result));
 
 }
