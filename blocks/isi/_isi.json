@@ -18,14 +18,14 @@
   ],
   "models": [
     {
-      "id": "aem-content-fragment",
+      "id": "isi",
       "fields": [
         {
-          "component": "aem-content-fragment",
-          "name": "picker",
-          "label": "Content Fragment Picker",
-          "valueType": "string",
-          "variationName": "contentFragmentVariation"
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
         }
       ]
     }
