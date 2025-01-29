@@ -35,7 +35,7 @@
 .isi .div {
   position: relative;
   align-self: stretch;
-  font-family: "Helvetica-Bold", Helvetica;
+  font-family: var(--body-font-family);
   font-weight: 400;
   color: var(--body-textbody-color);
   font-size: 10.4px;
@@ -53,10 +53,10 @@
 }
 
 .isi .span {
-  font-family: var(--footnote-microcopy-IT-font-family);
-  font-style: var(--footnote-microcopy-IT-font-style);
-  font-weight: var(--footnote-microcopy-IT-font-weight);
-  letter-spacing: var(--footnote-microcopy-IT-letter-spacing);
-  line-height: var(--footnote-microcopy-IT-line-height);
-  font-size: var(--footnote-microcopy-IT-font-size);
+  font-family: var(--footnote-microcopy-it-font-family);
+  font-style: var(--footnote-microcopy-it-font-style);
+  font-weight: var(--footnote-microcopy-it-font-weight);
+  letter-spacing: var(--footnote-microcopy-it-letter-spacing);
+  line-height: var(--footnote-microcopy-it-line-height);
+  font-size: var(--footnote-microcopy-it-font-size);
 }
