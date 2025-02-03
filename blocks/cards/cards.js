@@ -2,16 +2,30 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-  /* change to ul, li */
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     moveInstrumentation(row, li);
-    while (row.firstElementChild) li.append(row.firstElementChild);
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
-    });
+    const divs = [...row.children].filter((child) => child.tagName === 'DIV');
+    if (divs.length > 0) {
+      const cardImageDiv = divs.find((div) => div.children.length === 1 && div.querySelector('picture'));
+      if (cardImageDiv) {
+        cardImageDiv.className = 'cards-card-image';
+        li.append(cardImageDiv);
+        const img = cardImageDiv.querySelector('img');
+        if (img) {
+          const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+          moveInstrumentation(img, optimizedPic.querySelector('img'));
+          cardImageDiv.replaceWith(optimizedPic);
+        }
+      }
+      divs.forEach((div) => {
+        if (div !== cardImageDiv) {
+          div.className = 'cards-card-body';
+          li.append(div);
+        }
+      });
+    }
     ul.append(li);
   });
   ul.querySelectorAll('picture > img').forEach((img) => {
