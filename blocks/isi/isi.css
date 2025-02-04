@@ -19,7 +19,7 @@
   }
 }
 
-.isi .text {
+.isi p {
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
@@ -30,6 +30,19 @@
   letter-spacing: var(--footnote-microcopy-letter-spacing);
   line-height: var(--footnote-microcopy-line-height);
   font-style: var(--footnote-microcopy-font-style);
+}
+
+.isi u1 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: var(--footnote-microcopy-it-font-family);
+  font-weight: var(--footnote-microcopy-it-font-weight);
+  color: var(--body-textbody-color);
+  font-size: var(--footnote-microcopy-it-font-size);
+  letter-spacing: var(--footnote-microcopy-it-letter-spacing);
+  line-height: var(--footnote-microcopy-it-line-height);
+  font-style: var(--footnote-microcopy-it-font-style);
 }
 
 .isi .div {
