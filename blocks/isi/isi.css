@@ -3,8 +3,8 @@
 }
 
 .isi {
-  display: flex;
-  flex-direction: column;
+  display: relative;
+  flex-direction: stretch;
   align-items: center;
   justify-content: center;
   gap: 10px;
