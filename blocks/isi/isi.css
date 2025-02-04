@@ -32,7 +32,7 @@
   font-style: var(--footnote-microcopy-font-style);
 }
 
-.isi u1 {
+.isi ul {
   position: relative;
   align-self: stretch;
   margin-top: -1.00px;
