@@ -56,20 +56,3 @@
   line-height: 10.4px;
 }
 
-.isi .text-wrapper {
-  font-weight: var(--footnote-microcopy-font-weight);
-  line-height: var(--footnote-microcopy-line-height);
-  font-family: var(--footnote-microcopy-font-family);
-  font-style: var(--footnote-microcopy-font-style);
-  letter-spacing: var(--footnote-microcopy-letter-spacing);
-  font-size: var(--footnote-microcopy-font-size);
-}
-
-.isi .span {
-  font-family: var(--footnote-microcopy-it-font-family);
-  font-style: var(--footnote-microcopy-it-font-style);
-  font-weight: var(--footnote-microcopy-it-font-weight);
-  letter-spacing: var(--footnote-microcopy-it-letter-spacing);
-  line-height: var(--footnote-microcopy-it-line-height);
-  font-size: var(--footnote-microcopy-it-font-size);
-}
