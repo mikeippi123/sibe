@@ -359,9 +359,12 @@
     "id": "teaser",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser type",
+        "description": "The style of teaser",
+        "valueType": "string",
         "options": [
           {
             "name": "No Image",
