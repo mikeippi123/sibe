@@ -1,18 +1,18 @@
-.teaser.block{
+.teaser.image-on-left.block{
     background: var(--light-green-light-green-100, #F1F8F1);
     width: 1366px;
     height: 222px;
     display: flex;
 }
 
-.teaser.block > ul {
+.teaser.image-on-left.block > ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.teaser.block .teaser-body2{
+.teaser.no-image .teaser-body2{
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -21,7 +21,16 @@
     position: relative;
 }
 
-.teaser.block .teaser-body1{
+.teaser.image-on-left.block .teaser-body2{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    top: 66px;
+    right: 490px;
+    position: relative;
+}
+
+.teaser.no-image .teaser-body1{
     display: flex;
     padding: 16px;
     flex-direction: column;
@@ -29,13 +38,21 @@
     position: relative;
 }
 
-.teaser.block > ul > li > picture > img {
+.teaser.image-on-left.block .teaser-body1{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    top: 40px;
+    position: relative;
+}
+
+.teaser.image-on-left.block > ul > li > picture > img {
     width: 250px;
     height: 222px;
     object-fit: cover;
 }
 
-.teaser.block .button-container .button{
+.teaser.no-image .button-container .button{
     padding: 8px 16px;
     gap: 8px;
     position: relative;
@@ -45,4 +62,36 @@
     border-radius: 4.8px;
     border-color: var(--white);
     background: var(--coral-coral-800, #B95A55);
+}
+
+.teaser.image-on-left.block .button-container .button{
+    padding: 8px 16px;
+    gap: 8px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--white, #FFF);
+    border-radius: 4.8px;
+    border-color: var(--white);
+    background: var(--coral-coral-800, #B95A55);
+}
+
+.teaser.no-image.block{
+    background: var(--light-green-light-green-100, #F1F8F1);
+    width: 1366px;
+    height: 222px;
+    display: flex;
+}
+
+.teaser.no-image.block > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.teaser.no-image.block > ul > li > picture > img {
+    width: 0;
+    height: 0;
+    object-fit: cover;
 }
