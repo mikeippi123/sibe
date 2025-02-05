@@ -358,14 +358,29 @@
   {
     "id": "teaser",
     "fields": [
-       {
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "No Image",
+            "value": "no-image"
+          },
+          {
+            "name": "Image on left",
+            "value": "image-on-left"
+          }
+        ]
+      },
+      {
         "component": "reference",
         "valueType": "string",
         "name": "image",
         "label": "Image",
         "multi": false
-       },
-       {
+      },
+      {
         "component": "richtext",
         "name": "text",
         "value": "",
