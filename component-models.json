@@ -373,6 +373,10 @@
           {
             "name": "Image on left",
             "value": "image-on-left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
           }
         ]
       },
