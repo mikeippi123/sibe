@@ -111,21 +111,39 @@
     "id": "section",
     "fields": [
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "style",
+        "value": "",
         "label": "Style",
+        "description": "Background color style for section",
+        "valueType": "string",
         "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
           {
             "name": "Gray",
             "value": "gray"
+          },
+          {
+            "name": "Light Green",
+            "value": "light-green"
           }
         ]
       },
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "size",
+        "value": "",
         "label": "Size",
+        "description": "Sizing style for section",
+        "valueType": "string",
         "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
           {
             "name": "FullWidth",
             "value": "fullwidth"
@@ -429,5 +447,32 @@
         ]
       }
      ]
+  },
+  {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Card Style",
+        "description": "style for Cards",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Cascading",
+            "value": "cascading"
+          }
+        ]
+      }
+    ]
   }
 ]
