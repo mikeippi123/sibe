@@ -417,6 +417,10 @@ main .section.gray {
   background: var(--gray-200);
 }
 
+main .section.ligth-green {
+  background: var(--light-greenlight-green-100);
+}
+
 main .section.fullwidth{
   width: 99vw;
   position: relative;

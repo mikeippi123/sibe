@@ -111,20 +111,30 @@
     "id": "section",
     "fields": [
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "style",
+        "value": "",
         "label": "Style",
+        "description": "Background color style for section",
+        "valueType": "string",
         "options": [
           {
             "name": "Gray",
             "value": "gray"
+          },
+          {
+            "name": "Light Green",
+            "value": "light-green"
           }
         ]
       },
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "size",
+        "value": "",
         "label": "Size",
+        "description": "Background color style for section",
+        "valueType": "string",
         "options": [
           {
             "name": "FullWidth",
