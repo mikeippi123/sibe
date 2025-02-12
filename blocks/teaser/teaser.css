@@ -245,10 +245,12 @@
         padding: 0;
         display: flex;
     }
-    
+
     .teaser.image-on-left.block > ul > li:first-child {
-        width: 250px;
-        height: 222px;
+        width: auto;
+        height: auto;
+        max-width: 250px;
+        max-height: 222px;
         justify-content: center;
         align-items: center;
     }
@@ -264,7 +266,7 @@
     .teaser.image-on-left.block > ul > li > picture > img {
         width: auto;
         justify-content: center;
-        height: 222px;
+        height: 200px;
         object-fit: cover;
     }
 
