@@ -93,16 +93,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0;
+  align-items: stretch;
 }
 
 .cards.default > ul > li {
   border: 1px solid #dadada;
   background-color: #E9ECEF;
+  display: block;
 }
 
-.cards.default .cards-card-body {
-  margin: 16px;
+.cards.default .cards-card-body{
   position: relative;
+  text-align: left;
+  align-items: left;
+  margin: 16px;
+}
+
+.cards.default .cards-card-body h4,
+.cards.default .cards-card-body p {
+  margin: 0;
 }
 
 .cards.default .cards-card-image {
@@ -144,6 +153,22 @@
     grid-gap: 0;
   }
 
+  .cards.default > ul > li {
+    border: 1px solid #dadada;
+    background-color: #E9ECEF;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .cards.default .cards-card-body{
+    position: relative;
+    text-align: left;
+    align-items: left;
+    margin: 16px;
+  }
+
   .cards.default .cards-card-image {
     line-height: 0;
     width: 100%;
@@ -152,7 +177,11 @@
     max-height: 303px;
     position: relative;
   }
-
+  .cards.default .cards-card-body h4,
+  .cards.default .cards-card-body p {
+    margin: 0;
+  }
+  
   .cards.default > ul > li img {
     width: 100%;
     aspect-ratio: 4 / 3;

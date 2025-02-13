@@ -3,7 +3,7 @@ header .top-header-section{
   height: 32px;
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   border: white;
   background: linear-gradient(to left, #273A25, 50%, transparent 0%);
 }
@@ -203,7 +203,7 @@ header .header-top .header-top-right .utility-navigation{
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   height: 120px;
 }
