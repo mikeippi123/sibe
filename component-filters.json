@@ -12,22 +12,10 @@
       "image",
       "button",
       "title",
-      "isi",
       "hero",
-      "video",
       "cards",
       "columns",
-      "fragment",
-      "embed",
-      "tabs",
-      "teaser",
-      "carousel"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
+      "fragment"
     ]
   },
   {
@@ -43,22 +31,12 @@
     ]
   },
   {
-    "id":"video",
-    "components":[]
-  },
-  {
     "id": "column",
     "components": [
       "text",
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carousel-item"
     ]
   }
 ]

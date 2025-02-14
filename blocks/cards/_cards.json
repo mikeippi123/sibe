@@ -55,6 +55,10 @@
             {
               "name": "Cascading",
               "value": "cascading"
+            },
+            {
+              "name": "Management",
+              "value": "management"
             }
           ]
         }
