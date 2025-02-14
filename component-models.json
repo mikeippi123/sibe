@@ -57,18 +57,6 @@
     ]
   },
   {
-    "id": "isi",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "button",
     "fields": [
       {
@@ -111,39 +99,21 @@
     "id": "section",
     "fields": [
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "style",
-        "value": "",
         "label": "Style",
-        "description": "Background color style for section",
-        "valueType": "string",
         "options": [
-          {
-            "name": "None",
-            "value": ""
-          },
           {
             "name": "Gray",
             "value": "gray"
-          },
-          {
-            "name": "Light Green",
-            "value": "light-green"
           }
         ]
       },
       {
-        "component": "select",
+        "component": "multiselect",
         "name": "size",
-        "value": "",
         "label": "Size",
-        "description": "Sizing style for section",
-        "valueType": "string",
         "options": [
-          {
-            "name": "None",
-            "value": ""
-          },
           {
             "name": "FullWidth",
             "value": "fullwidth"
@@ -153,45 +123,33 @@
     ]
   },
   {
-    "id": "video",
+    "id": "cards",
     "fields": [
       {
-        "component": "aem-content",
-        "valueType": "string",
-        "name": "uri",
-        "label": "Video"
-      },
-      {
-        "component": "multiselect",
+        "component": "select",
         "name": "classes",
         "value": "",
-        "label": "Options",
+        "label": "Card Style",
+        "description": "style for Cards",
         "valueType": "string",
         "options": [
           {
-            "name": "Auto Play",
-            "children": [
-              {
-                "name": "AutoPlay",
-                "value": "autoplay"
-              }
-            ]
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Cascading",
+            "value": "cascading"
+          },
+          {
+            "name": "Management",
+            "value": "management"
           }
         ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "placeholder_image",
-        "label": "Placeholder Image",
-        "multi": true
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "placeholder_imageAlt",
-        "value": "",
-        "label": "Placeholder Image Alt Text"
       }
     ]
   },
@@ -268,25 +226,6 @@
     ]
   },
   {
-    "id": "tabs-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "tabName",
-        "value": "",
-        "label": "Tab Name"
-      },
-      {
-        "component": "richtext",
-        "name": "content",
-        "value": "",
-        "label": "Content",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -323,155 +262,14 @@
     ]
   },
   {
-    "id": "carousel-item",
+    "id": "isi",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "media_image",
-        "label": "Background Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "media_imageAlt",
-        "value": "",
-        "label": "Bacgkround Alt"
-      },
-      {
-        "component": "richtext",
-        "name": "content_text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "embed",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "embed_placeholder",
-        "label": "Placeholder Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_placeholderAlt",
-        "value": "",
-        "label": "Placeholder Image Alt Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "embed_uri",
-        "label": "URI"
-      }
-    ]
-  },
-  {
-    "id": "teaser",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Teaser type",
-        "description": "The style of teaser",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "No Image",
-            "value": "no-image"
-          },
-          {
-            "name": "Image on left",
-            "value": "image-on-left"
-          },
-          {
-            "name": "Center",
-            "value": "center"
-          }
-        ]
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
       {
         "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      {
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      }
-     ]
-  },
-  {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Card Style",
-        "description": "Style for Cards",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "None",
-            "value": ""
-          },
-          {
-            "name": "Default",
-            "value": "default"
-          },
-          {
-            "name": "Cascading",
-            "value": "cascading"
-          }
-        ]
       }
     ]
   }
