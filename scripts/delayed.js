@@ -14,8 +14,5 @@ if (isiBlock) {
     .then((data) => {
       // Handle the GraphQL response data
       isiBlock.firstChild.innerHTML = data.data.isiTextList.items[0].ISI_Text.html;
-    })
-    .catch((error) => {
-      console.error('Error:', error);
     });
 }
