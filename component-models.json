@@ -178,6 +178,37 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Card Style",
+        "description": "style for Cards",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "name": "Cascading",
+            "value": "cascading"
+          },
+          {
+            "name": "Management",
+            "value": "management"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
