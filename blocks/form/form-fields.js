@@ -68,8 +68,14 @@ const createSelect = async (fd) => {
   setCommonAttributes(select, fd);
   const addOption = ({ text, value }) => {
     const option = document.createElement('option');
-    option.text = text.trim();
-    option.value = value.trim();
+    if (text === undefined) {
+      option.text = 'none';
+      option.value = 'none';
+    } else {
+      option.text = text.trim();
+      option.value = value.trim();
+    }
+
     if (option.value === select.value) {
       option.setAttribute('selected', '');
     }
