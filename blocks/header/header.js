@@ -126,6 +126,9 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
+  const logoImg = navBrand.querySelector('picture');
+  logoImg.addEventListener('click', () => { window.location = '/index/home'; });
+  logoImg.style.cursor = 'pointer';
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
     brandLink.className = '';
