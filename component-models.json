@@ -123,21 +123,39 @@
     "id": "section",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Section Style",
+        "description": "style for Section",
+        "valueType": "string",
         "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
           {
             "name": "Gray",
             "value": "gray"
+          },
+          {
+            "name": "Light Green",
+            "value": "light-green"
           }
         ]
       },
       {
-        "component": "multiselect",
+        "component": "select",
         "name": "size",
+        "value": "",
         "label": "Size",
+        "description": "Width for Section",
+        "valueType": "string",
         "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
           {
             "name": "FullWidth",
             "value": "fullwidth"
@@ -401,6 +419,32 @@
   {
     "id": "teaser",
     "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Teaser Style",
+        "description": "style for Teaser",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "None",
+            "value": ""
+          },
+          {
+            "name": "Image on Left",
+            "value": "image-on-left"
+          },
+          {
+            "name": "No Image",
+            "value": "no-image"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          }
+        ]
+      },
       {
         "component": "reference",
         "valueType": "string",
