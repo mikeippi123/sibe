@@ -466,6 +466,13 @@ main .section.fullwidth > div > p > picture{
   max-width: 100%;
 }
 
+.default-content-wrapper:nth-child(2) > p > picture > img {
+  position: relative;
+  top: 5px;
+  height: 380px;
+  width: 483px;
+}
+
 main .section.fullwidth > div > p > picture> img{
   max-width: 100%;
 }
@@ -474,11 +481,4 @@ main .section.fullwidth > div > p > picture> img{
 .full-width-element {
   margin-left: calc(-100vw / 2 + var(--bp-large) / 2); 
   margin-right: calc(-100vw / 2 + var(--bp-large) / 2);
-}
-
-.default-content-wrapper:nth-child(2) > p > picture > img {
-  position: relative;
-  top: 5px;
-  height: 380px;
-  width: 483px;
 }
