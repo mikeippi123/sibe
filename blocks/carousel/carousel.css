@@ -30,6 +30,10 @@
   z-index: -1;
 }
 
+.carousel-slide-video{
+  z-index: -1;
+}
+
 .carousel .carousel-slides::-webkit-scrollbar {
   display: none;
 }
@@ -55,6 +59,11 @@
 }
 
 .carousel .carousel-slide .carousel-slide-image picture {
+  position: absolute;
+  inset: 0;
+}
+
+.carousel .carousel-slide .carousel-slide-video video {
   position: absolute;
   inset: 0;
 }

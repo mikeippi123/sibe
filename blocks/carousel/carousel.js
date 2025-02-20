@@ -71,6 +71,7 @@ function bindEvents(block) {
   });
 }
 
+// Create Slide
 function createSlide(row, slideIndex, carouselId) {
   const slide = document.createElement('li');
   slide.dataset.slideIndex = slideIndex;
@@ -78,7 +79,29 @@ function createSlide(row, slideIndex, carouselId) {
   slide.classList.add('carousel-slide');
 
   row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
-    column.classList.add(`carousel-slide-${colIdx === 0 ? 'image' : 'content'}`);
+    if (colIdx === 0) {
+      if (column.innerText.includes('.mp4')) {
+        column.classList.add('carousel-slide-video');
+        // hack fix to remove button div
+        column.firstChild.remove();
+        const videoTag = document.createElement('video');
+        videoTag.setAttribute('autoplay', '');
+        videoTag.setAttribute('muted', '');
+        videoTag.setAttribute('playsinline', '');
+        videoTag.setAttribute('loop', '');
+        videoTag.id = `myVideo-${colIdx}`;
+        const videoSrc = document.createElement('source');
+        videoSrc.setAttribute('src', 'https://www.discoveraprilinigan.com/sites/g/files/qhldwo10741/files/2024-10/4-Hit-Video-Desktop.mp4');
+        videoSrc.setAttribute('type', 'video/mp4');
+        videoTag.append(videoSrc);
+        column.append(videoTag);
+      } else {
+        column.classList.add('carousel-slide-image');
+      }
+    } else {
+      column.classList.add('carousel-slide-content');
+    }
+
     slide.append(column);
   });
 
