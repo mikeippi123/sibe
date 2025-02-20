@@ -695,28 +695,27 @@
   }
 }
 
-
 @media (width <= 1113px){
   .cards.management{
     max-width: 343PX;
-    max-height: 1118px;
+    height: auto;
+    max-height: 1100px;
     padding: 0 16px 24px;
     margin: auto;
   }
 
   .cards.management > ul {
-    display: flex;
+    display: grid;
     padding-bottom: 8px;
-    flex-direction: column;
     align-items: center;
     gap: 40px;
-    align-self: stretch;
     margin: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .cards.management > ul > li {
-    display: flex;
-    width: 267.5px;
+    width: auto;
+    height: auto;
     padding: 0 20px;
     flex-direction: column;
     align-items: center;
@@ -747,6 +746,8 @@
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: contain;
+    margin: auto;
+    vertical-align: middle;
   }
 
   .cards.management > ul > li:nth-child(2){
@@ -764,20 +765,33 @@
   .cards.management > ul > li:nth-child(4){
     height: 149px;
     width: 328px;
+    bottom: 660px;
+    left: 0;
+    right: 0;
+    position: relative;
   }
   
   .cards.management > ul > li:nth-child(5){
     width: 136px;
     height: 77px;
+    bottom: 625px;
+    right: 25px;
+    position: relative;
   }
   
   .cards.management > ul > li:nth-child(6){
     height: 77px;
     width: 136px;
+    bottom: 755px;
+    left: 85px;
+    position: relative;
   }
   
   .cards.management > ul > li:nth-child(7){
     height: 77px;
     width: 136px;
+    bottom: 860px;
+    left: 205px;
+    position: relative;
   }
 }
