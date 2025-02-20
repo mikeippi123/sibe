@@ -130,6 +130,10 @@
           {
             "name": "Gray",
             "value": "gray"
+          },
+          {
+            "name": "Light Green",
+            "value": "light-green"
           }
         ]
       },
