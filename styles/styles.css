@@ -231,7 +231,7 @@ body.appear {
 main {
   max-width: var(--bp-large); 
   margin: 0 auto;
-  margin-top: var(--nav-height);
+  margin-top: 33px;
   background-color: var(--white);
 }
 
@@ -421,6 +421,12 @@ main .section.light-green {
   background: var(--light-greenlight-green-100);
 }
 
+main .section.light-green h5{
+  margin: 0;
+  padding: 33.4px 0;
+}
+
+
 main .section.fullwidth{
   width: 99vw;
   position: relative;
@@ -442,8 +448,9 @@ main .section.gray.fullwidth.hero-container{
   height: 0;
 }
 
-main .section.gray.fullwidth > .default-content-wrapper{
-  width: 90%;
+main .section.fullwidth > .default-content-wrapper{
+  width: 100%;
+  max-width: 1366px;
 }
 
 .default-content-wrapper:nth-child(2) > p > picture {
@@ -453,11 +460,16 @@ main .section.gray.fullwidth > .default-content-wrapper{
   width: 250px;
 }
 
-main .section.gray.fullwidth > div > p > picture{
+main .section.fullwidth > div > p > picture{
   display: flex;
   justify-content: center;
   align-items: center; 
   overflow: hidden;
+  max-width: 100%;
+}
+
+main .section.fullwidth > div > p > picture> img{
+  max-width: 100%;
 }
 
 /* Full width element */
