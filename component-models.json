@@ -124,7 +124,7 @@
     "fields": [
       {
         "component": "select",
-        "name": "classes",
+        "name": "style",
         "value": "",
         "label": "Section Style",
         "description": "style for Section",
