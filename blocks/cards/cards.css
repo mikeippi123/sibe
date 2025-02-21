@@ -1,4 +1,8 @@
 /* out of box style style */
+.cards-container{
+  padding: 0;
+}
+
 .cards > ul {
   display: flex;
   padding-bottom: 8px;
@@ -12,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   flex: 1 0 0;
+  max-height: 170px;
 }
 
 .cards > ul> li:not(:last-child) {
@@ -100,6 +105,7 @@
   border: 1px solid #dadada;
   background-color: #E9ECEF;
   display: block;
+  max-height: 100%;
 }
 
 .cards.default .cards-card-body{
@@ -221,6 +227,7 @@
   max-width: 423px;
   height: 462px;
   padding: 0 16px;
+  max-height: 100%;
 }
 
 .cards.management > ul > li > .cards-card-body > h6,
@@ -231,6 +238,10 @@
 .cards.management > ul > li > .cards-card-body > p{
   margin: 0;
   text-align: start;
+}
+
+.cards.cascading > ul > li{
+  max-height: 100%;
 }
 
 .cards.management > ul > li:nth-child(2){ 

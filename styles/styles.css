@@ -413,12 +413,18 @@ button.secondary {
 }
 
 /* section metadata */
+.section{
+  padding: 24px 0 0;
+}
+
 main .section.gray {
   background: var(--gray-200);
+  padding: 24px 16px;
 }
 
 main .section.light-green {
   background: var(--light-greenlight-green-100);
+  padding: 24px 16px;
 }
 
 main .section.light-green h5{
@@ -437,6 +443,19 @@ main .section.fullwidth{
   justify-content: center;
 }
 
+.default-content-wrapper:nth-child(2) > p > picture {
+  position: relative;
+  bottom: 400px;
+  height: 250px;
+  width: 250px;
+}
+
+main .section.gray > div > p > picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main .section.gray.fullwidth.hero-container{
   display: block;
 }
@@ -449,13 +468,6 @@ main .section.gray.fullwidth.hero-container{
 main .section.fullwidth > .default-content-wrapper{
   width: 100%;
   max-width: 1366px;
-}
-
-.default-content-wrapper:nth-child(2) > p > picture {
-  position: relative;
-  bottom: 400px;
-  height: 250px;
-  width: 250px;
 }
 
 main .section.fullwidth > div > p > picture{
@@ -475,10 +487,21 @@ main .section.fullwidth > div > p > picture{
 
 main .section.fullwidth > div > p > picture> img{
   max-width: 100%;
+  
 }
 
 /* Full width element */
 .full-width-element {
   margin-left: calc(-100vw / 2 + var(--bp-large) / 2); 
   margin-right: calc(-100vw / 2 + var(--bp-large) / 2);
+}
+
+.section.hero-container{
+  padding: 24px 0 0;
+}
+
+.section.carousel-container{
+  padding: 0;
+  max-height: 400px;
+  max-width: 1366px;
 }
