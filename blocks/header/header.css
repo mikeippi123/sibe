@@ -433,7 +433,8 @@ header .nav-brand {
   font-weight: 700;
   line-height: 1;
   width: 197px;
-  height: 88px
+  height: 88px;
+  padding: 0;
 }
 
 header nav .nav-brand img {

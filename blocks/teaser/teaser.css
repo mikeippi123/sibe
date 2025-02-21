@@ -1,3 +1,7 @@
+.teaser-container{
+    padding: 0;
+}
+
 .teaser.image-on-left.block{
     background: var(--light-green-light-green-100, #F1F8F1);
     max-width: 1366px;
