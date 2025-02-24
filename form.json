@@ -82,13 +82,37 @@
         "Placeholder": "",
         "Value": "",
         "Options": "",
-        "Mandatory": "true",
+        "Mandatory": "false",
         "Style": "",
         "ID": "",
         "Fieldset": "secondLineFS"
       },
       {
         "Name": "secondLineFS",
+        "Type": "fieldset",
+        "Label": "",
+        "Placeholder": "",
+        "Value": "",
+        "Options": "",
+        "Mandatory": "",
+        "Style": "",
+        "ID": "",
+        "Fieldset": ""
+      },
+      {
+        "Name": "specialDropdown",
+        "Type": "select",
+        "Label": "Specialty",
+        "Placeholder": "Please select",
+        "Value": "",
+        "Options": "Nephrologist, Physician assistant, Nurse practitioner, Other",
+        "Mandatory": "false",
+        "Style": "",
+        "ID": "",
+        "Fieldset": "thirdLineFS"
+      },
+      {
+        "Name": "thirdLineFS",
         "Type": "fieldset",
         "Label": "",
         "Placeholder": "",
