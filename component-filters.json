@@ -12,24 +12,10 @@
       "image",
       "button",
       "title",
-      "isi",
       "hero",
-      "video",
       "cards",
       "columns",
-      "fragment",
-      "embed",
-      "tabs",
-      "teaser",
-      "carousel",
-      "form",
-      "stickyinfo"
-    ]
-  },
-  {
-    "id": "tabs",
-    "components": [
-      "tabs-item"
+      "fragment"
     ]
   },
   {
@@ -51,25 +37,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id":"video",
-    "components":[]
-  },
-  {
-    "id": "column",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
-  },
-  {
-    "id": "carousel",
-    "components": [
-      "carousel-item"
     ]
   }
 ]
