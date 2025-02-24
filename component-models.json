@@ -494,5 +494,30 @@
         ]
       }
     ]
+  },
+  {
+    "id": "stickyinfo",
+    "fields":[
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "value": "",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "href",
+        "value": "",
+        "label": "Link"
+      },
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      }
+    ]
   }
 ]
