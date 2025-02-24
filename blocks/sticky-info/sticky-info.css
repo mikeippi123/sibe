@@ -1,0 +1,97 @@
+.sticky-info{
+    position: sticky;
+    bottom: 20vh;
+    z-index: 100;
+    margin-top: -0.9375rem;
+}
+
+.sticky-info.block{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: fit-content;
+    margin-left: auto;
+    padding: 0.9375rem 1.75rem 0.9375rem 1.4375rem;
+    border-radius: 16px 0 0 16px;
+    border: 5px solid #f0877f;
+    border-right: 0;
+    box-shadow: 0 3px 10px 0 #0000004D;
+}
+
+.sticky-info-image > img{
+    display: flex;
+    width: 50px;
+    height: 52px;
+}
+
+.sticky-info.block p{
+width: 141px;
+font-family: Inter, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+line-height: 1.2;
+text-align: start;
+}
+
+
+.sticky-info .button-container{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #B95A55;
+    --bs-btn-border-color: #B95A55;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9d4d48;
+    --bs-btn-hover-border-color: #944844;
+    --bs-btn-focus-shadow-rgb: 196, 115, 111;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #944844;
+    --bs-btn-active-border-color: #8b4440;
+    --bs-btn-active-shadow: inset 0 3px 5px #00000020;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #B95A55;
+    --bs-btn-disabled-border-color: #B95A55;
+}
+
+.button:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+}
+
+@media (width >= 992px) {
+    .sticky-info {
+        margin-bottom:-6.0625rem;
+    }
+}
+
+.sticky-info .sticky-info-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: fit-content;
+    margin-left: auto;
+    padding: 0.9375rem 1.75rem 0.9375rem 1.4375rem;
+    border-radius: 16px 0 0 16px;
+    border: 5px solid #f0877f;
+    border-right: 0;
+    box-shadow: 0 3px 10px 0 #0000004D;
+}
+
+.sticky-info .sticky-info-link:hover,.sticky-info .sticky-info-link:active {
+    border: 5px solid #f0877f;
+    border-right: 0
+}
+
+.sticky-info .sticky-info-link .icon {
+    width: 50px;
+    height: 52px
+}
+
+.sticky-info .sticky-info-link .text {
+    width: 141px;
+    font-family: Inter,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    line-height: 1.2;
+    text-align: start
+}
+
+@media (width <= 991.9px) {
+    .sticky-info .sticky-info-link .text {
+        display:none
+    }
+}

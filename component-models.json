@@ -498,12 +498,12 @@
   {
     "id": "stickyinfo",
     "fields": [
+
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "text",
-        "value": "",
-        "label": "Text"
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
       },
       {
         "component": "aem-content",
@@ -511,10 +511,14 @@
         "label": "Link"
       },
       {
-        "component": "reference",
-        "name": "icon",
-        "label": "Icon",
-        "multi": false
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Title"
       }
     ]
   }
