@@ -219,12 +219,6 @@ const createRadio = (fd) => {
   return { field, fieldWrapper };
 };
 
-/*const createDropdown = (fd) => {
-  const { field, fieldWrapper } = createInput(fd);
-
-  return { field, fieldWrapper };
-};*/
-
 const FIELD_CREATOR_FUNCTIONS = {
   select: createSelect,
   heading: createHeading,
@@ -236,7 +230,6 @@ const FIELD_CREATOR_FUNCTIONS = {
   fieldset: createFieldset,
   checkbox: createCheckbox,
   radio: createRadio,
-  //dropdown: createDropdown,
 };
 
 export default async function createField(fd, form) {
