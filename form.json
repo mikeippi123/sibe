@@ -100,6 +100,30 @@
         "Fieldset": ""
       },
       {
+        "Name": "specialDropdown",
+        "Type": "select",
+        "Label": "Specialty",
+        "Placeholder": "Please select",
+        "Value": "",
+        "Options": "Nephrologist, Physician assistant, Nurse practitioner, Other",
+        "Mandatory": "false",
+        "Style": "",
+        "ID": "",
+        "Fieldset": "thirdLineFS"
+      },
+      {
+        "Name": "thirdLineFS",
+        "Type": "fieldset",
+        "Label": "",
+        "Placeholder": "",
+        "Value": "",
+        "Options": "",
+        "Mandatory": "",
+        "Style": "",
+        "ID": "",
+        "Fieldset": ""
+      },
+      {
         "Name": "optIn",
         "Type": "checkbox",
         "Label": "By opting in, I confirm that I am 18 years of age or older and I understand that the information I have provided will be used by Otsuka America Pharmaceutical, Inc. (“Otsuka”) and its contracted third parties to contact me with relevant information and about Otsuka products that may be relevant to me. I will have the ability to opt out from receiving Otsuka communications at any time by calling 1-833-468-7852 or by following the opt-out instruction within the communications.",
