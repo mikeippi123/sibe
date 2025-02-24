@@ -82,7 +82,7 @@
         "Placeholder": "",
         "Value": "",
         "Options": "",
-        "Mandatory": "true",
+        "Mandatory": "false",
         "Style": "",
         "ID": "",
         "Fieldset": "secondLineFS"
