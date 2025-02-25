@@ -1,21 +1,26 @@
-function addEventListeners(block) {
-  block.querySelector('.button').addEventListener('mouseover', () => {
-    block.querySelector('.image').classList.add('zoom');
-  });
-
-  block.querySelector('.button').addEventListener('mouseout', () => {
-    block.querySelector('.image').classList.remove('zoom');
-  });
-}
-
 export default function decorate(block) {
-  block.querySelector('picture').classList.add('sticky-info-image');
+const button = block.querySelector('.button');
 
-  block.querySelector('.image-wrapper img').classList.add('image');
+// Create the <picture> element
+const picture = document.createElement('picture');
 
-  block.querySelector('h1,h2,h3,h4,h5,h6').classList.add('title');
+// Create a new <source> element
+const source = document.createElement('source');
+source.srcset = 'image.webp'; 
+source.type = 'image/webp'; 
 
-  block.querySelector('p').classList.add('sticky-info-text');
 
-  addEventListeners(block);
+const img = document.createElement('img');
+img.src = 'image.jpg'; 
+img.alt = 'Description of the image'; 
+
+// Append the <source> and <img> elements to the <picture> tag
+picture.append(source, img);
+
+// Add classes to the picture and button
+picture.classList.add('sticky-info-image');
+button.classList.add('sticky-info-button');
+
+// Append the <picture> element to the button
+button.prepend(picture);
 }
