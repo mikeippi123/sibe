@@ -1,26 +1,23 @@
 export default function decorate(block) {
-const button = block.querySelector('.button');
+  const button = block.querySelector('.button');
 
-// Create the <picture> element
-const picture = document.createElement('picture');
+  const existingPicture = block.querySelector('picture');
+  button.classList.add('sticky-info-link');
+  
+  button.prepend(existingPicture);
 
-// Create a new <source> element
-const source = document.createElement('source');
-source.srcset = 'image.webp'; 
-source.type = 'image/webp'; 
+  const anchor = document.querySelector('.sticky-info .button-container a');
+  anchor.childNodes[1].textContent = '';
 
+  const titleText = anchor.getAttribute('title');
 
-const img = document.createElement('img');
-img.src = 'image.jpg'; 
-img.alt = 'Description of the image'; 
+  const span = document.createElement('span');
+  span.textContent = titleText;
 
-// Append the <source> and <img> elements to the <picture> tag
-picture.append(source, img);
+  span.classList.add('sticky-info-text');
 
-// Add classes to the picture and button
-picture.classList.add('sticky-info-image');
-button.classList.add('sticky-info-button');
+  button.append(span)
 
-// Append the <picture> element to the button
-button.prepend(picture);
+  const picture = document.querySelector('.sticky-info .button-container picture');
+  picture.classList.add('sticky-info-picture'); 
 }
