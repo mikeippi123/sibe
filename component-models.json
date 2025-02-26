@@ -72,11 +72,10 @@
     "id": "form",
     "fields": [
       {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "component": "reference",
+        "name": "form",
+        "label": "Form",
+        "multi": false
       }
     ]
   },
