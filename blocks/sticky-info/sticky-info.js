@@ -1,21 +1,22 @@
-function addEventListeners(block) {
-  block.querySelector('.button').addEventListener('mouseover', () => {
-    block.querySelector('.image').classList.add('zoom');
-  });
-
-  block.querySelector('.button').addEventListener('mouseout', () => {
-    block.querySelector('.image').classList.remove('zoom');
-  });
-}
-
 export default function decorate(block) {
-  block.querySelector('picture').classList.add('sticky-info-image');
+  const button = block.querySelector('.button');
 
-  block.querySelector('.image-wrapper img').classList.add('image');
+  const existingPicture = block.querySelector('picture');
+  button.classList.add('sticky-info-link');
+  button.prepend(existingPicture);
 
-  block.querySelector('h1,h2,h3,h4,h5,h6').classList.add('title');
+  const anchor = document.querySelector('.sticky-info .button-container a');
+  anchor.childNodes[1].textContent = '';
 
-  block.querySelector('p').classList.add('sticky-info-text');
+  const titleText = anchor.getAttribute('title');
 
-  addEventListeners(block);
+  const span = document.createElement('span');
+  span.textContent = titleText;
+
+  span.classList.add('sticky-info-text');
+
+  button.append(span);
+
+  const picture = document.querySelector('.sticky-info .button-container picture');
+  picture.classList.add('sticky-info-picture');
 }
