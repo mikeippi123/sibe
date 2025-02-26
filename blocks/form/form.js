@@ -1,8 +1,7 @@
 import createField from './form-fields.js';
 
 async function createForm(formHref, submitHref) {
-  const { pathname } = new URL(formHref);
-  const resp = await fetch(pathname);
+  const resp = await fetch(formHref);
   const json = await resp.json();
 
   const form = document.createElement('form');
@@ -78,8 +77,9 @@ async function handleSubmit(form) {
 }
 
 export default async function decorate(block) {
-  // const links = [...block.querySelectorAll('a')].map((a) => a.href);
-  const formLink = `${window.location.origin}/form.json`;
+  const publishURL = 'https://publish-p7906-e91530.adobeaemcloud.com';
+  const formPath = block.children.item(0).children.item(0).children.item(0).children.item(0).title;
+  const formLink = `${publishURL + formPath}`;
   const submitLink = 'https://google.com';
   if (!formLink || !submitLink) return;
 
