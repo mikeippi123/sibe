@@ -1,38 +1,4 @@
-.sticky-info{
-    position: sticky;
-    bottom: 20vh;
-    z-index: 100;
-    margin-top: -0.9375rem;
-}
-
-.sticky-info.block{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: fit-content;
-    margin-left: auto;
-    padding: 0.9375rem 1.75rem 0.9375rem 1.4375rem;
-    border-radius: 16px 0 0 16px;
-    border: 5px solid #f0877f;
-    border-right: 0;
-    box-shadow: 0 3px 10px 0 #0000004D;
-}
-
-.sticky-info-image > img{
-    display: flex;
-    width: 50px;
-    height: 52px;
-}
-
-.sticky-info.block p{
-width: 141px;
-font-family: Inter, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-line-height: 1.2;
-text-align: start;
-}
-
-
-.sticky-info .button-container{
+.sticky-info .button-container {
     --bs-btn-color: #fff;
     --bs-btn-bg: #B95A55;
     --bs-btn-border-color: #B95A55;
@@ -49,49 +15,93 @@ text-align: start;
     --bs-btn-disabled-border-color: #B95A55;
 }
 
-.button:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
+.section.fullwidth.sticky-info-container{
+    justify-content: end;
 }
 
-@media (width >= 992px) {
-    .sticky-info {
-        margin-bottom:-6.0625rem;
-    }
+.sticky-info{
+    bottom: 20vh;
+    z-index: 100;
+    margin: auto;
 }
 
-.sticky-info .sticky-info-link {
+.sticky-info.block{
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 20px;
     max-width: fit-content;
-    margin-left: auto;
-    padding: 0.9375rem 1.75rem 0.9375rem 1.4375rem;
+    border-radius: 16px 0 0 16px;
+    border-right: 0;
+    background-color: transparent;
+    right: 0;
+}
+
+.sticky-info-picture{
+    display: flex;
+    object-fit: none;
+    margin: 0 auto;
+    justify-content: center;
+    width: 50px;
+    padding-right: 5px;
+}
+
+.sticky-info-picture > img{
+    display: flex;
+    object-fit: cover;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sticky-info .button-container .button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: fit-content;
+    padding: 15px 10px 15px 15px;
     border-radius: 16px 0 0 16px;
     border: 5px solid #f0877f;
     border-right: 0;
     box-shadow: 0 3px 10px 0 #0000004D;
+    background-color: var(--bs-btn-bg);
+    margin: 0;
+    height: 102px;
 }
 
-.sticky-info .sticky-info-link:hover,.sticky-info .sticky-info-link:active {
-    border: 5px solid #f0877f;
-    border-right: 0
+.sticky-info .button-container .button:hover {
+    background-color: var(--bs-btn-active-bg);
 }
 
-.sticky-info .sticky-info-link .icon {
-    width: 50px;
-    height: 52px
+@media (width >= 992px) {
+    .sticky-info {
+        justify-content: flex-start;
+    }
 }
 
-.sticky-info .sticky-info-link .text {
+.sticky-info .sticky-info-text {
     width: 141px;
-    font-family: Inter,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    line-height: 1.2;
-    text-align: start
+    height: 72px;
+    line-height: 24px;
+    text-align: start;
+    white-space: normal;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 @media (width <= 991.9px) {
-    .sticky-info .sticky-info-link .text {
+    .sticky-info.block{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: fit-content;
+        border-radius: 16px 0 0 16px;
+        border-right: 0;
+        background-color: transparent;
+        right: 0;
+    }
+
+    .sticky-info .sticky-info-link .sticky-info-text{
         display:none
     }
 }
