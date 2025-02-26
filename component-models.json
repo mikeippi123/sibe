@@ -72,10 +72,9 @@
     "id": "form",
     "fields": [
       {
-        "component": "reference",
+        "component": "aem-content",
         "name": "form",
-        "label": "Form",
-        "multi": false
+        "label": "Form"
       }
     ]
   },
