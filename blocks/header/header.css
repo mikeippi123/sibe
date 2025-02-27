@@ -150,6 +150,11 @@ header nav .nav-tools ul > li > ul > li {
   font-weight: 400;
 }
 
+header picture {
+  display: block;
+  height: 82px;
+}
+
 header .top-header-section .utility-navigation ul {
   display: flex;
   font-size: 10px;
