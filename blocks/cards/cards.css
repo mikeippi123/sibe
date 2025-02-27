@@ -237,7 +237,7 @@
 
 .cards.management > ul > li > .cards-card-body > p{
   margin: 0;
-  text-align: start;
+  text-align: start; 
 }
 
 .cards.cascading > ul > li{
