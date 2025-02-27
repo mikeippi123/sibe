@@ -198,7 +198,7 @@
   }
 }
 
-.cards.cascading > ul > li img {
+.cards cascading > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: none;
@@ -240,7 +240,7 @@
   text-align: start;
 }
 
-.cards.cascading > ul > li{
+.cards .cascading > ul > li{
   max-height: 100%;
 }
 
@@ -306,7 +306,7 @@
 }
 
 /* cascading style */
-.cards.cascading > ul {
+.cards .cascading > ul {
   list-style: none;
   margin: 0;
   display: grid;
@@ -320,7 +320,7 @@
 }
 
  /* first card */
-.cards.cascading > ul > li:first-child {
+.cards .cascading > ul > li:first-child {
   display: flex;
   padding: 16px;
   flex-direction: column;
@@ -337,13 +337,13 @@
   margin-top: auto;
 }
 
-.cards.cascading > ul > li:first-child > picture {
+.cards .cascading > ul > li:first-child > picture {
   width: 100px;
   height: 77.883px;
   flex-shrink: 0;
 }
 
-.cards.cascading > ul > li:first-child > .cards-card-body > h4{
+.cards .cascading > ul > li:first-child > .cards-card-body > h4{
   color: var(--white, #FFF);
   text-align: center;
   font-size: 24px;
@@ -354,14 +354,14 @@
   margin: 0;
 }
 
-.cards.cascading .cards-card-body {
+.cards .cascading .cards-card-body {
   margin: 16px;
   position: relative;
   height: auto;
   text-align: left;
 }
 
-.cards.cascading > ul > li:first-child > .cards-card-body{
+.cards .cascading > ul > li:first-child > .cards-card-body{
   color: var(--white, #FFF);
   font-size: 16px;
   font-style: normal;
@@ -370,7 +370,7 @@
 }
 
  /* second card */
-.cards.cascading > ul > li:nth-child(2) {
+.cards .cascading > ul > li:nth-child(2) {
   border: transparent;
   display: flex;
   width: auto;
@@ -387,7 +387,7 @@
 }
 
  /* third card */
-.cards.cascading > ul > li:nth-child(3) {
+.cards .cascading > ul > li:nth-child(3) {
   border: transparent;
   display: flex;
   width: auto;
@@ -404,7 +404,7 @@
 }
 
  /* fourth card */
-.cards.cascading > ul > li:nth-child(4) {
+.cards .cascading > ul > li:nth-child(4) {
   border: transparent;
   display: flex;
   width: auto;
@@ -421,7 +421,7 @@
 }
 
  /* fifth card */
-.cards.cascading > ul > li:nth-child(5) {
+.cards .cascading > ul > li:nth-child(5) {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -434,10 +434,10 @@
   margin-top: auto;
 }
 
-.cards.cascading > ul > li:nth-child(2) > picture,
-.cards.cascading > ul > li:nth-child(3) > picture,
-.cards.cascading > ul > li:nth-child(4) > picture,
-.cards.cascading > ul > li:nth-child(5) > picture{
+.cards .cascading > ul > li:nth-child(2) > picture,
+.cards .cascading > ul > li:nth-child(3) > picture,
+.cards .cascading > ul > li:nth-child(4) > picture,
+.cards .cascading > ul > li:nth-child(5) > picture{
   display: flex;
   width: 100px;
   height: 64.482px;
@@ -447,10 +447,10 @@
   position: relative;
 }
 
-.cards.cascading > ul > li:nth-child(2) > .cards-card-body > h4,
-.cards.cascading > ul > li:nth-child(3) > .cards-card-body > h4,
-.cards.cascading > ul > li:nth-child(4) > .cards-card-body > h4,
-.cards.cascading > ul > li:nth-child(5) > .cards-card-body > h4{
+.cards .cascading > ul > li:nth-child(2) > .cards-card-body > h4,
+.cards .cascading > ul > li:nth-child(3) > .cards-card-body > h4,
+.cards .cascading > ul > li:nth-child(4) > .cards-card-body > h4,
+.cards .cascading > ul > li:nth-child(5) > .cards-card-body > h4{
   color: var(--coral-coral-800, #B95A55);
   text-align: center;
   margin: 0;
@@ -460,10 +460,10 @@
   line-height: 120%;
 }
 
-.cards.cascading > ul > li:nth-child(2) > .cards-card-body,
-.cards.cascading > ul > li:nth-child(3) > .cards-card-body,
-.cards.cascading > ul > li:nth-child(4) > .cards-card-body,
-.cards.cascading > ul > li:nth-child(5) > .cards-card-body{
+.cards .cascading > ul > li:nth-child(2) > .cards-card-body,
+.cards .cascading > ul > li:nth-child(3) > .cards-card-body,
+.cards .cascading > ul > li:nth-child(4) > .cards-card-body,
+.cards .cascading > ul > li:nth-child(5) > .cards-card-body{
   align-self: stretch;
   color: var(--black, #000);
   font-size: 16px;
@@ -473,7 +473,7 @@
 }
 
 /* arrow */
-.cards.cascading > ul > li:first-child > .cards-card-body:nth-child(3){
+.cards .cascading > ul > li:first-child > .cards-card-body:nth-child(3){
   width: 238px;
   height: 79.475px;
   background-image: url('../../images/arrowdesktop.png');
@@ -481,7 +481,7 @@
   background-position: center;
 }
 
-.cards.cascading .cards-card-image {
+.cards .cascading .cards-card-image {
   line-height: 0;
   width: 100%;
   height: 100%;
@@ -490,7 +490,7 @@
   position: relative;
 }
 
-.cards.cascading .cards-card-body .button-container > a{
+.cards .cascading .cards-card-body .button-container > a{
   padding: 8px 16px;
   gap: 8px;
   position: relative;
@@ -504,7 +504,7 @@
 
 @media (width <= 1113px){
   /* cascading style */
-  .cards.cascading > ul {
+  .cards .cascading > ul {
     display: flex;
     width: auto;
     padding: 24px 16px 24px 0;
@@ -515,7 +515,7 @@
   }
 
   /* first card */
-  .cards.cascading > ul > li:first-child {
+  .cards .cascading > ul > li:first-child {
     display: flex;
     padding: 0 16px 16px;
     flex-direction: column;
@@ -528,13 +528,13 @@
     margin-top: auto;
   }
 
-  .cards.cascading > ul > li:first-child > picture {
+  .cards .cascading > ul > li:first-child > picture {
     width: 100px;
     height: 77.883px;
     flex-shrink: 0;
   }
 
-  .cards.cascading > ul > li:first-child > .cards-card-body > h4{
+  .cards .cascading > ul > li:first-child > .cards-card-body > h4{
     color: var(--white, #FFF);
     text-align: center;
     font-size: 24px;
@@ -545,12 +545,12 @@
     margin: 0;
   }
 
-  .cards.cascading .cards-card-body {
+  .cards .cascading .cards-card-body {
     margin: 16px;
     position: relative;
   }
 
-  .cards.cascading > ul > li:first-child > .cards-card-body{
+  .cards .cascading > ul > li:first-child > .cards-card-body{
     color: var(--white, #FFF);
     font-size: 16px;
     font-style: normal;
@@ -559,7 +559,7 @@
   }
 
   /* second card */
-  .cards.cascading > ul > li:nth-child(2) {
+  .cards .cascading > ul > li:nth-child(2) {
     border: transparent;
     display: flex;
     height: auto;
@@ -576,7 +576,7 @@
   }
 
   /* third card */
-  .cards.cascading > ul > li:nth-child(3) {
+  .cards .cascading > ul > li:nth-child(3) {
     border: transparent;
     display: flex;
     height: auto;
@@ -593,7 +593,7 @@
   }
 
   /* fourth card */
-  .cards.cascading > ul > li:nth-child(4) {
+  .cards .cascading > ul > li:nth-child(4) {
     border: transparent;
     display: flex;
     height: auto;
@@ -610,7 +610,7 @@
   }
 
   /* fifth card */
-  .cards.cascading > ul > li:nth-child(5) {
+  .cards .cascading > ul > li:nth-child(5) {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -623,10 +623,10 @@
     margin-bottom: 10px;
   }
 
-  .cards.cascading > ul > li:nth-child(2) > picture,
-  .cards.cascading > ul > li:nth-child(3) > picture,
-  .cards.cascading > ul > li:nth-child(4) > picture,
-  .cards.cascading > ul > li:nth-child(5) > picture{
+  .cards .cascading > ul > li:nth-child(2) > picture,
+  .cards .cascading > ul > li:nth-child(3) > picture,
+  .cards .cascading > ul > li:nth-child(4) > picture,
+  .cards .cascading > ul > li:nth-child(5) > picture{
     display: flex;
     width: 100px;
     height: 64.482px;
@@ -636,10 +636,10 @@
     position: relative;
   }
 
-  .cards.cascading > ul > li:nth-child(2) > .cards-card-body > h4,
-  .cards.cascading > ul > li:nth-child(3) > .cards-card-body > h4,
-  .cards.cascading > ul > li:nth-child(4) > .cards-card-body > h4,
-  .cards.cascading > ul > li:nth-child(5) > .cards-card-body > h4{
+  .cards cascading > ul > li:nth-child(2) > .cards-card-body > h4,
+  .cards cascading > ul > li:nth-child(3) > .cards-card-body > h4,
+  .cards cascading > ul > li:nth-child(4) > .cards-card-body > h4,
+  .cards cascading > ul > li:nth-child(5) > .cards-card-body > h4{
     color: var(--coral-coral-800, #B95A55);
     text-align: center;
     margin: 0;
@@ -649,10 +649,10 @@
     line-height: 120%;
   }
 
-  .cards.cascading > ul > li:nth-child(2) > .cards-card-body,
-  .cards.cascading > ul > li:nth-child(3) > .cards-card-body,
-  .cards.cascading > ul > li:nth-child(4) > .cards-card-body,
-  .cards.cascading > ul > li:nth-child(5) > .cards-card-body{
+  .cards cascading > ul > li:nth-child(2) > .cards-card-body,
+  .cards cascading > ul > li:nth-child(3) > .cards-card-body,
+  .cards cascading > ul > li:nth-child(4) > .cards-card-body,
+  .cards cascading > ul > li:nth-child(5) > .cards-card-body{
     align-self: stretch;
     color: var(--black, #000);
     font-size: 16px;
@@ -662,7 +662,7 @@
   }
 
   /* arrow */
-  .cards.cascading > ul > li:first-child > .cards-card-body:nth-child(3){
+  .cards cascading > ul > li:first-child > .cards-card-body:nth-child(3){
     max-width: 90.661px;
     max-height: 79.47px;
     width: 100%;
@@ -676,7 +676,7 @@
     background-repeat: no-repeat;
   }
 
-  .cards.cascading .cards-card-image {
+  .cards cascading .cards-card-image {
     line-height: 0;
     width: 100%;
     height: 100%;
@@ -685,7 +685,7 @@
     position: relative;
   }
 
-  .cards.cascading .cards-card-body .button-container > a{
+  .cards cascading .cards-card-body .button-container > a{
     padding: 8px 16px;
     gap: 8px;
     position: relative;
@@ -697,7 +697,7 @@
     background: var(--coral-coral-800, #B95A55);
   }
 
-  .cards.cascading > ul > li img {
+  .cards cascading > ul > li img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: none;
