@@ -213,6 +213,11 @@ header .nav-wrapper {
   height: 120px;
 }
 
+header picture {
+  display: block;
+  height: 82px;
+}
+
 header nav {
   box-sizing: border-box;
   display: grid;
