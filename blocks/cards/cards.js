@@ -1,6 +1,8 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+buttonClickHandler = function(event) {alert(event);};
+
 export default function decorate(block) {
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
@@ -35,4 +37,7 @@ export default function decorate(block) {
   });
   block.textContent = '';
   block.append(ul);
+
+  
+  window.adobeDataLayer.push(function(dl) {dl.addEventListener("click", myHandler);});
 }

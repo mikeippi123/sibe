@@ -1,6 +1,8 @@
 import { fetchPlaceholders } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+// import { adobeDataLayer } from '../../scripts/adobe-client-data-layer.min.js';
+
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
@@ -59,6 +61,11 @@ function bindEvents(block) {
   });
   block.querySelector('.slide-next').addEventListener('click', () => {
     showSlide(block, parseInt(block.dataset.activeSlide, 10) + 1);
+    window.adobeDataLayer.push(
+      {
+        event: "eventNext"
+      }
+    );
   });
 
   const slideObserver = new IntersectionObserver((entries) => {
@@ -149,4 +156,5 @@ export default async function decorate(block) {
   if (!isSingleSlide) {
     bindEvents(block);
   }
+  window.adobeDataLayer.push({"component": {"Carousel": {"title": "carousel"}}});
 }
