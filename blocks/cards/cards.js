@@ -33,6 +33,19 @@ export default function decorate(block) {
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });
+
+  const divElement = document.querySelector('.cards');
+  const component = divElement.className;
+  const heading = document.querySelector('.cards-card-body h4');
+  const paragraph = document.querySelector('.cards-card-body p');
+  
+  const dataObject = {};
+  dataObject.component = component;
+  dataObject.title = heading;
+  dataObject.description = paragraph;
+
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
+
   block.textContent = '';
   block.append(ul);
 }

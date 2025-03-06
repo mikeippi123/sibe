@@ -149,4 +149,11 @@ export default async function decorate(block) {
   if (!isSingleSlide) {
     bindEvents(block);
   }
+  const divElement = document.querySelector('.carousel');
+  const component = divElement.className;
+
+  const dataObject = {};
+  dataObject.component = component;
+
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
 }
