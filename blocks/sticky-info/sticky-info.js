@@ -24,7 +24,6 @@ export default function decorate(block) {
   const component = divElement.className;
   const heading = document.querySelector('title');
   const paragraph = document.querySelector('.sticky-info-text');
-  
   const dataObject = {};
   dataObject.component = component;
   dataObject.title = heading;

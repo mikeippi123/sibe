@@ -143,10 +143,9 @@ export default async function decorate(block) {
     observer.observe(block);
   }
 
-  const divElement = document.querySelector(".video-wrapper");
+  const divElement = document.querySelector('.video-wrapper');
   const component = divElement.className;
   const heading = document.querySelector('.video-wrapper picture');
-  
   const dataObject = {};
   dataObject.component = component;
   dataObject.title = heading;
