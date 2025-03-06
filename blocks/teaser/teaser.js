@@ -36,5 +36,13 @@ export default function decorate(block) {
     img.closest('picture').replaceWith(optimizedPic);
   });
   block.textContent = '';
+
+  const divElement = document.querySelector('.teaser');
+  const component = divElement.className;
+
+  const dataObject = {};
+  dataObject.component = component;
+
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
   block.append(ul);
 }
