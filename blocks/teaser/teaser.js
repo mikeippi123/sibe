@@ -37,7 +37,7 @@ export default function decorate(block) {
   });
   block.textContent = '';
 
-  const divElement = document.querySelector(".teaser");
+  const divElement = document.querySelector('.teaser');
   const component = divElement.className;
 
   const dataObject = {};
