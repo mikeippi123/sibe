@@ -38,7 +38,6 @@ export default function decorate(block) {
   const component = divElement.className;
   const heading = document.querySelector('.cards-card-body h4');
   const paragraph = document.querySelector('.cards-card-body p');
-  
   const dataObject = {};
   dataObject.component = component;
   dataObject.title = heading;

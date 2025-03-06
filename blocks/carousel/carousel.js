@@ -149,6 +149,7 @@ export default async function decorate(block) {
   if (!isSingleSlide) {
     bindEvents(block);
   }
+  
   const divElement = document.querySelector('.carousel');
   const component = divElement.className;
 
