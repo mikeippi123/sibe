@@ -401,6 +401,12 @@ function wrapTextNodes(block) {
   });
 }
 
+function blockData(name) {
+  const myBlockDataString = `{"${name}": {}}`;
+ 
+  return JSON.parse(myBlockDataString);
+}
+
 /**
  * Decorates paragraphs containing a single link as buttons.
  * @param {Element} element container element
@@ -436,6 +442,8 @@ function decorateButtons(element) {
         }
       }
     }
+    a.dataset.blockClickable = '';
+    a.dataset.blockDataLayer = JSON.stringify(blockData('link'));
   });
 }
 
@@ -754,4 +762,5 @@ export {
   toClassName,
   waitForFirstImage,
   wrapTextNodes,
+  blockData,
 };

@@ -1,8 +1,9 @@
 // eslint-disable-next-line func-names
-(function () {
+export function loadDataLayerHelper () {
   let dataLayerEnabled;
   let dataLayerName;
   let dataLayer;
+  onDocumentReady();
 
   function getComponentData(element) {
     const dataLayerJson = element.dataset.blockDataLayer;
@@ -68,6 +69,4 @@
       });
     }
   }
-  if (document.readyState !== 'loading') onDocumentReady();
-  else document.addEventListener('DOMContentLoaded', onDocumentReady);
-}());
+}
