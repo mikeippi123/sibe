@@ -21,12 +21,11 @@ export default function decorate(block) {
           teaserImageDiv.replaceWith(optimizedPic);
         }
       }
-      
       divs.forEach((div) => {
         if (div !== teaserImageDiv) {
           div.className = `teaser-body${counter}`;
-          if(div.firstChild && div.firstChild.nextSibling) {
-            if(div.firstChild.nextSibling.id){
+          if (div.firstChild && div.firstChild.nextSibling) {
+            if (div.firstChild.nextSibling.id) {
               dataObject['teaser-1234'].id = div.firstChild.nextSibling.id;
             }
           }
@@ -43,7 +42,6 @@ export default function decorate(block) {
     img.closest('picture').replaceWith(optimizedPic);
   });
   block.textContent = '';
-
 
   block.dataset.blockDataLayer = JSON.stringify(dataObject);
   block.append(ul);
