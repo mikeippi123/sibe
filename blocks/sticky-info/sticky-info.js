@@ -19,4 +19,15 @@ export default function decorate(block) {
 
   const picture = document.querySelector('.sticky-info .button-container picture');
   picture.classList.add('sticky-info-picture');
+
+  const divElement = document.querySelector('.sticky-info');
+  const component = divElement.className;
+  const heading = document.querySelector('title');
+  const paragraph = document.querySelector('.sticky-info-text');
+  const dataObject = {};
+  dataObject.component = component;
+  dataObject.title = heading;
+  dataObject.description = paragraph;
+
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
 }
