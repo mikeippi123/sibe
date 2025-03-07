@@ -1,9 +1,8 @@
-// eslint-disable-next-line func-names
-export function loadDataLayerHelper () {
+/* eslint-disable import/prefer-default-export */
+export function loadDataLayerHelper() {
   let dataLayerEnabled;
   let dataLayerName;
   let dataLayer;
-  onDocumentReady();
 
   function getComponentData(element) {
     const dataLayerJson = element.dataset.blockDataLayer;
@@ -69,4 +68,6 @@ export function loadDataLayerHelper () {
       });
     }
   }
+
+  onDocumentReady();
 }

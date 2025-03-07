@@ -403,7 +403,7 @@ function wrapTextNodes(block) {
 
 function blockData(name) {
   const myBlockDataString = `{"${name}": {}}`;
- 
+
   return JSON.parse(myBlockDataString);
 }
 

@@ -1,5 +1,6 @@
 // add delayed functionality here
-import { loadDataLayerHelper } from '../../scripts/data-layer-helper.js';
+import { loadDataLayerHelper } from './data-layer-helper.js';
+
 const isiBlock = document.querySelector('.isi-wrapper');
 loadDataLayerHelper();
 if (isiBlock) {
