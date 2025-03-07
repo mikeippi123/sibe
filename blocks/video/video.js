@@ -3,9 +3,11 @@
  * Show a video referenced by a link
  * https://www.hlx.live/developer/block-collection/video
  */
-import { blockData } from '../../scripts/aem.js';
+import { blockData, ranNum } from '../../scripts/aem.js';
 
-const dataObject = blockData('video-12345');
+const ranNumber = ranNum();
+const randomNumber = `video-${ranNumber}`;
+const dataObject = blockData(randomNumber);
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 function embedYoutube(url, autoplay, background) {
@@ -111,7 +113,7 @@ const loadVideoEmbed = (block, link, autoplay, background) => {
 export default async function decorate(block) {
   const placeholder = block.querySelector('picture');
   const link = block.querySelector('a').href;
-  dataObject['video-12345'].link = link;
+  dataObject[randomNumber].link = link;
   block.textContent = '';
   block.dataset.embedLoaded = false;
 
