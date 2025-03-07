@@ -29,3 +29,11 @@ export default function decorate(block) {
 
 }
 */
+import { blockData, ranNum } from '../../scripts/aem.js';
+
+export default function decorate(block) {
+  const ranNumber = ranNum();
+  const randomNumber = `isi-${ranNumber}`;
+  const dataObject = blockData(randomNumber);
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
+}

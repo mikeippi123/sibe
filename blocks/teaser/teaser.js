@@ -1,9 +1,11 @@
-import { createOptimizedPicture, blockData } from '../../scripts/aem.js';
+import { createOptimizedPicture, blockData, ranNum } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   let counter = 0;
-  const dataObject = blockData('teaser-1234');
+  const ranNumber = ranNum();
+  const randomNumber = `teaser-${ranNumber}`;
+  const dataObject = blockData(randomNumber);
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
@@ -26,7 +28,7 @@ export default function decorate(block) {
           div.className = `teaser-body${counter}`;
           if (div.firstChild && div.firstChild.nextSibling) {
             if (div.firstChild.nextSibling.id) {
-              dataObject['teaser-1234'].id = div.firstChild.nextSibling.id;
+              dataObject[randomNumber].id = div.firstChild.nextSibling.id;
             }
           }
           li.append(div);
@@ -42,7 +44,6 @@ export default function decorate(block) {
     img.closest('picture').replaceWith(optimizedPic);
   });
   block.textContent = '';
-
   block.dataset.blockDataLayer = JSON.stringify(dataObject);
   block.append(ul);
 }

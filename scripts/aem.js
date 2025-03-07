@@ -735,6 +735,11 @@ async function loadSections(element) {
   }
 }
 
+function ranNum() {
+  const random = Math.random();
+
+  return random;
+}
 init();
 
 export {
@@ -763,4 +768,5 @@ export {
   waitForFirstImage,
   wrapTextNodes,
   blockData,
+  ranNum,
 };
