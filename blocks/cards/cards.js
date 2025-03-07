@@ -1,7 +1,12 @@
-import { createOptimizedPicture } from '../../scripts/aem.js';
+import { createOptimizedPicture, blockData, ranNum } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
+  const ranNumber = ranNum();
+  const randomNumber = `cards-${ranNumber}`;
+  const randomNumberCard = `card-${ranNumber}`;
+  const dataObject = blockData(randomNumber);
+  const dataObject1 = blockData(randomNumberCard);
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
@@ -19,9 +24,16 @@ export default function decorate(block) {
           cardImageDiv.replaceWith(optimizedPic);
         }
       }
+
       divs.forEach((div) => {
         if (div !== cardImageDiv) {
           div.className = 'cards-card-body';
+          if (div.firstChild && div.firstChild.nextSibling) {
+            if (div.firstChild.nextSibling.id) {
+              dataObject1[randomNumberCard].id = div.firstChild.nextSibling.id;
+              div.dataset.blockDataLayer = JSON.stringify(dataObject1);
+            }
+          }
           li.append(div);
         }
       });
@@ -33,18 +45,7 @@ export default function decorate(block) {
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });
-
-  const divElement = document.querySelector('.cards');
-  const component = divElement.className;
-  const heading = document.querySelector('.cards-card-body h4');
-  const paragraph = document.querySelector('.cards-card-body p');
-  const dataObject = {};
-  dataObject.component = component;
-  dataObject.title = heading;
-  dataObject.description = paragraph;
-
-  block.dataset.blockDataLayer = JSON.stringify(dataObject);
-
   block.textContent = '';
+  block.dataset.blockDataLayer = JSON.stringify(dataObject);
   block.append(ul);
 }
