@@ -1,5 +1,5 @@
-// eslint-disable-next-line func-names
-(function () {
+/* eslint-disable import/prefer-default-export */
+export function loadDataLayerHelper() {
   let dataLayerEnabled;
   let dataLayerName;
   let dataLayer;
@@ -68,6 +68,6 @@
       });
     }
   }
-  if (document.readyState !== 'loading') onDocumentReady();
-  else document.addEventListener('DOMContentLoaded', onDocumentReady);
-}());
+
+  onDocumentReady();
+}
