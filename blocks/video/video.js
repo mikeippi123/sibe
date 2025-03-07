@@ -4,6 +4,7 @@
  * https://www.hlx.live/developer/block-collection/video
  */
 import { blockData } from '../../scripts/aem.js';
+
 const dataObject = blockData('video-12345');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -145,7 +146,5 @@ export default async function decorate(block) {
     observer.observe(block);
   }
 
-
- 
   block.dataset.blockDataLayer = JSON.stringify(dataObject);
 }
