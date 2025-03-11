@@ -482,8 +482,13 @@ function decorateIcons(element, prefix = '') {
  * @param {Element} main The container element
  */
 function decorateSections(main) {
+
+
   main.querySelectorAll(':scope > div:not([data-section-status])').forEach((section) => {
     const wrappers = [];
+    const ranNumber2 = ranNum();
+    const randomNumber1 = `section-${ranNumber2}`;
+    const dataObject2 = blockData(randomNumber1);
     let defaultContent = false;
     [...section.children].forEach((e) => {
       if ((e.tagName === 'DIV' && e.className) || !defaultContent) {
@@ -522,7 +527,9 @@ function decorateSections(main) {
       });
       sectionMeta.parentNode.remove();
     }
+    section.dataset.blockDataLayer = JSON.stringify(dataObject2);
   });
+
 }
 
 /**
