@@ -477,13 +477,16 @@ function decorateIcons(element, prefix = '') {
   });
 }
 
+function ranNum() {
+  const random = Math.random();
+
+  return random;
+}
 /**
  * Decorates all sections in a container element.
  * @param {Element} main The container element
  */
 function decorateSections(main) {
-
-
   main.querySelectorAll(':scope > div:not([data-section-status])').forEach((section) => {
     const wrappers = [];
     const ranNumber2 = ranNum();
@@ -529,7 +532,6 @@ function decorateSections(main) {
     }
     section.dataset.blockDataLayer = JSON.stringify(dataObject2);
   });
-
 }
 
 /**
@@ -742,11 +744,6 @@ async function loadSections(element) {
   }
 }
 
-function ranNum() {
-  const random = Math.random();
-
-  return random;
-}
 init();
 
 export {
