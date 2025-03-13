@@ -1,4 +1,4 @@
-import { fetchPlaceholders } from '../../scripts/aem.js';
+import { fetchPlaceholders, blockData, ranNum } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 function updateActiveSlide(slide) {
@@ -150,10 +150,6 @@ export default async function decorate(block) {
     bindEvents(block);
   }
 
-  const divElement = document.querySelector('.carousel');
-  const component = divElement.className;
-  const dataObject = {};
-  dataObject.component = component;
-
+  const dataObject = blockData(`carousel-${ranNum()}`);
   block.dataset.blockDataLayer = JSON.stringify(dataObject);
 }

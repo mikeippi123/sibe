@@ -10,6 +10,7 @@ import {
   loadSection,
   loadSections,
   loadCSS,
+  getPageName,
 } from './aem.js';
 
 /**
@@ -96,6 +97,7 @@ async function loadEager(doc) {
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
+    document.body.id = `page-${getPageName()}`;
     await loadSection(main.querySelector('.section'), waitForFirstImage);
   }
 
