@@ -126,6 +126,12 @@ function sampleRUM(checkpoint, data) {
   }
 }
 
+function getPageName() {
+  const path = window.location.pathname;
+  const page = path.split('/').pop();
+  return page;
+}
+
 /**
  * Setup block utils.
  */
@@ -403,7 +409,6 @@ function wrapTextNodes(block) {
 
 function blockData(name) {
   const myBlockDataString = `{"${name}": {}}`;
-
   return JSON.parse(myBlockDataString);
 }
 
@@ -414,6 +419,11 @@ function blockData(name) {
 function decorateButtons(element) {
   element.querySelectorAll('a').forEach((a) => {
     a.title = a.title || a.textContent;
+    const encodeTitle = btoa(a.title);
+    const blockName = `link-${encodeTitle}`;
+    const dataBlock = blockData(blockName);
+    dataBlock[blockName].title = a.title;
+    dataBlock[blockName].linkUrl = a.href;
     if (a.href !== a.textContent) {
       const up = a.parentElement;
       const twoup = a.parentElement.parentElement;
@@ -443,7 +453,7 @@ function decorateButtons(element) {
       }
     }
     a.dataset.blockClickable = '';
-    a.dataset.blockDataLayer = JSON.stringify(blockData('link'));
+    a.dataset.blockDataLayer = JSON.stringify(dataBlock);
   });
 }
 
@@ -531,6 +541,7 @@ function decorateSections(main) {
       sectionMeta.parentNode.remove();
     }
     section.dataset.blockDataLayer = JSON.stringify(dataObject2);
+    section.id = randomNumber1;
   });
 }
 
@@ -773,4 +784,5 @@ export {
   wrapTextNodes,
   blockData,
   ranNum,
+  getPageName,
 };
