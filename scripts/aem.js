@@ -534,6 +534,8 @@ function decorateSections(main) {
             .filter((size) => size)
             .map((size) => toClassName(size.trim()));
           sizes.forEach((size) => section.classList.add(size));
+        } else if (key === 'id') {
+          section.id = meta.id;
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
@@ -541,7 +543,9 @@ function decorateSections(main) {
       sectionMeta.parentNode.remove();
     }
     section.dataset.blockDataLayer = JSON.stringify(dataObject2);
-    section.id = randomNumber1;
+    if (!section.id) {
+      section.id = randomNumber1;
+    }
   });
 }
 
