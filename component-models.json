@@ -121,6 +121,11 @@
     "id": "section",
     "fields": [
       {
+        "component": "text",
+        "name": "id",
+        "label": "ID"
+      },
+      {
         "component": "select",
         "name": "style",
         "value": "",
