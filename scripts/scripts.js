@@ -32,6 +32,10 @@ export function moveAttributes(from, to, attributes) {
   });
 }
 
+export function isAuthorEnvironment() {
+  return document.querySelector('*[data-aue-resource]') !== null;
+}
+
 /**
  * Move instrumentation attributes from a given element to another given element.
  * @param {Element} from the element to copy attributes from
