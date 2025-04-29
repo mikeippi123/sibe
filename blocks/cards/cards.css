@@ -343,7 +343,8 @@
   flex-shrink: 0;
 }
 
-.cards.cascading > ul > li:first-child > .cards-card-body > h4{
+.cards.cascading > ul > li:first-child > .cards-card-body > h4,
+.cards.cascading> * > ul > li:first-child > .cards-card-body > h4{
   color: var(--white, #FFF);
   text-align: center;
   font-size: 24px;
