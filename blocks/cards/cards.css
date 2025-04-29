@@ -337,14 +337,15 @@
   margin-top: auto;
 }
 
-.cards.cascading > ul > li:first-child > picture {
+.cards.cascading > ul > li:first-child > picture,
+.cards.cascading > ul > li:first-child > * >  picture {
   width: 100px;
   height: 77.883px;
   flex-shrink: 0;
 }
 
 .cards.cascading > ul > li:first-child > .cards-card-body > h4,
-.cards.cascading> * > ul > li:first-child > .cards-card-body > h4{
+.cards.cascading > ul > li:first-child > .cards-card-body > * > h4{
   color: var(--white, #FFF);
   text-align: center;
   font-size: 24px;
@@ -362,7 +363,8 @@
   text-align: left;
 }
 
-.cards.cascading > ul > li:first-child > .cards-card-body{
+.cards.cascading > ul > li:first-child > .cards-card-body,
+.cards.cascading > ul > li:first-child > * > .cards-card-body{
   color: var(--white, #FFF);
   font-size: 16px;
   font-style: normal;
@@ -371,7 +373,8 @@
 }
 
  /* second card */
-.cards.cascading > ul > li:nth-child(2) {
+.cards.cascading > ul > li:nth-child(2),
+.cards.cascading > ul > * > li:nth-child(2) {
   border: transparent;
   display: flex;
   width: auto;
@@ -388,7 +391,8 @@
 }
 
  /* third card */
-.cards.cascading > ul > li:nth-child(3) {
+.cards.cascading > ul > li:nth-child(3),
+.cards.cascading > ul > * > li:nth-child(3) {
   border: transparent;
   display: flex;
   width: auto;
@@ -405,7 +409,8 @@
 }
 
  /* fourth card */
-.cards.cascading > ul > li:nth-child(4) {
+.cards.cascading > ul > li:nth-child(4),
+.cards.cascading > ul > * > li:nth-child(4) {
   border: transparent;
   display: flex;
   width: auto;
@@ -422,7 +427,8 @@
 }
 
  /* fifth card */
-.cards.cascading > ul > li:nth-child(5) {
+.cards.cascading > ul > li:nth-child(5),
+.cards.cascading > ul > * > li:nth-child(5) {
   display: flex;
   flex-direction: column;
   width: auto;
@@ -438,7 +444,11 @@
 .cards.cascading > ul > li:nth-child(2) > picture,
 .cards.cascading > ul > li:nth-child(3) > picture,
 .cards.cascading > ul > li:nth-child(4) > picture,
-.cards.cascading > ul > li:nth-child(5) > picture{
+.cards.cascading > ul > li:nth-child(5) > picture,
+.cards.cascading > ul > li:nth-child(2) > * > picture,
+.cards.cascading > ul > li:nth-child(3) > * > picture,
+.cards.cascading > ul > li:nth-child(4) > * > picture,
+.cards.cascading > ul > li:nth-child(5)  > * > picture{
   display: flex;
   width: 100px;
   height: 64.482px;
@@ -451,7 +461,11 @@
 .cards.cascading > ul > li:nth-child(2) > .cards-card-body > h4,
 .cards.cascading > ul > li:nth-child(3) > .cards-card-body > h4,
 .cards.cascading > ul > li:nth-child(4) > .cards-card-body > h4,
-.cards.cascading > ul > li:nth-child(5) > .cards-card-body > h4{
+.cards.cascading > ul > li:nth-child(5) > .cards-card-body > h4,
+.cards.cascading > ul > li:nth-child(2) > .cards-card-body > * > h4,
+.cards.cascading > ul > li:nth-child(3) > .cards-card-body > * > h4,
+.cards.cascading > ul > li:nth-child(4) > .cards-card-body > * > h4,
+.cards.cascading > ul > li:nth-child(5) > .cards-card-body > * > h4{
   color: var(--coral-coral-800, #B95A55);
   text-align: center;
   margin: 0;
